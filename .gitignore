@@ -1,0 +1,18 @@
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.ruff_cache/
+
+# Virtual environment
+.venv/
+
+# macOS
+.DS_Store
+
+# Playwright MCP test artifacts
+.playwright-mcp/
+
+# Claude Code local settings
+.claude/settings.local.json
