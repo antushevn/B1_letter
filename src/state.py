@@ -5,6 +5,7 @@ class Error(TypedDict):
     original: str
     correction: str
     explanation: str
+    category: str              # one of storage.ERROR_CATEGORIES
 
 
 class CriterionScores(TypedDict):
@@ -14,6 +15,7 @@ class CriterionScores(TypedDict):
 
 
 class PracticeState(TypedDict):
+    language: str              # UI / feedback language code, e.g. "ru" / "de" / "en"
     topic: str
     user_letter: str
     feedback: str

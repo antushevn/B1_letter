@@ -16,3 +16,9 @@ __pycache__/
 
 # Claude Code local settings
 .claude/settings.local.json
+
+# Generated topic pool (rebuild via scripts/build_topic_pool.py)
+data/topics.json
+
+# Practice history (local user data)
+data/history.jsonl
