@@ -4,14 +4,20 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Purpose
 
-A LangGraph-based tool for practicing the letter-writing section of the B1 German language exam. The flow generates a topic, receives the user's letter, then analyses it and highlights errors.
+A LangGraph-based trainer for the B1 German exam with three practice modules:
+
+- **Letter** — write the exam letter (Goethe-Zertifikat B1 / telc B1 format), get examiner-style grading.
+- **Grammar** — B1 grammar topics with offline exercises; topics are recommended based on the
+  learner's actual error history from the other modules.
+- **Picture description** — the DTZ (telc A2·B1) Sprechen Teil 2 task practised in written form;
+  a vision-capable model grades the description against the actual photo.
 
 ## Stack
 
 - Python 3.12
-- LangGraph — orchestrates the multi-step practice flow
-- Anthropic Claude API — LLM for topic generation, error checking, and feedback
-- Streamlit (likely) — local web UI
+- LangGraph — orchestrates the letter and picture flows (human-in-the-loop interrupts)
+- Anthropic Claude API — Haiku for all LLM calls (topic fallback, letter grading, picture grading)
+- Streamlit — multi-page web UI (`st.navigation`)
 
 ## Setup
 
@@ -21,38 +27,60 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Copy `.env.example` to `.env` and set `ANTHROPIC_API_KEY`.
+Copy `.env.example` to `.env` and set `ANTHROPIC_API_KEY`. On Streamlit Community Cloud, set
+`ANTHROPIC_API_KEY` in the app secrets instead (`src/common/llm.py` bridges st.secrets → env).
 
 ## Running
 
 ```bash
-# Web UI
 streamlit run app.py
-
-# Flow only (no UI)
-python -m src.main
 ```
 
 ## Architecture
 
-The core is a LangGraph `StateGraph` whose state carries the full session: topic, user letter, and feedback.
-
 ```
-generate_topic → await_letter → check_letter → (done)
+app.py                     entry point: sidebar language selector + st.navigation
+src/common/
+  llm.py                   shared Anthropic client, model tiering, secrets bridge
+  storage.py               history.jsonl persistence + aggregations (all modules)
+src/letter/                LangGraph flow: generate_topic → await_letter → check_letter
+src/picture/               LangGraph flow: pick_picture → await_description → check_description
+src/grammar/               no LLM: curriculum loader + deterministic checking + recommendations
+src/ui/
+  i18n.py                  every UI string (ru/de/en); feedback language follows the UI language
+  *_view.py                one render(T) per page; widgets.py has shared render helpers
+data/
+  topics.json              pre-generated letter tasks (scripts/build_topic_pool.py, committed)
+  grammar_curriculum.json  hand-authored: 12 topics × lesson (3 langs, markdown with tables,
+                           memory hooks, typical mistakes) × 8 verified core exercises
+  grammar_pool.json        extended exercise pool (scripts/build_grammar_pool.py, Batch API,
+                           hand-reviewed); each drill session samples 8 random from core + pool
+  pictures/ + pictures.json  photos from official DTZ model sets (g.a.s.t./BAMF/Goethe) plus a
+                           few Commons photos; scripts/build_picture_pool.py only for Commons ones
+  history.jsonl            append-only attempt log (gitignored, one JSON record per line)
 ```
 
-Key modules:
+Key design decisions:
 
-- `src/state.py` — TypedDict defining `PracticeState` (topic, user_letter, feedback, errors)
-- `src/nodes.py` — one function per graph node; each takes and returns `PracticeState`
-- `src/graph.py` — assembles the `StateGraph`, defines edges and entry/end points
-- `src/prompts.py` — all Claude prompt templates (topic generation, error analysis)
-- `app.py` — Streamlit UI; drives the graph by invoking nodes and reading state
-
-`await_letter` is a human-in-the-loop interrupt node — the graph pauses there and resumes when the user submits their letter.
+- **Cost control**: content that can be pre-generated lives in `data/` and ships with the repo.
+  The grammar module makes **zero** API calls; the letter/picture modules make exactly one grading
+  call per attempt (Haiku). `await_*` nodes are `interrupt()` nodes — the graph pauses and resumes
+  via `Command(resume=...)` across Streamlit reruns (MemorySaver checkpointer, thread_id per session).
+- **Error taxonomy is the integration point**: `storage.ERROR_CATEGORIES` tags every graded error
+  (letter + picture) and every grammar topic declares which categories it trains
+  (`grammar_curriculum.json` → `categories`). `src/grammar/logic.recommend_topics()` ranks topics
+  by those counts — this is how "adjust grammar to my weaknesses" works. Don't rename categories.
+- **History records** always carry `module` ("letter" | "picture" | "grammar"); records without the
+  field are legacy letter attempts. Grammar attempts store `wrong_categories` instead of `errors`.
+- The stats page has export/import of `history.jsonl` because hosted filesystems are ephemeral.
 
 ## LangGraph conventions
 
-- State is a plain `TypedDict`; nodes are pure functions `(state: PracticeState) -> dict`
-- Use `graph.compile(checkpointer=...)` with `MemorySaver` for local runs so the human-in-the-loop interrupt persists between Streamlit rerenders
+- State is a plain `TypedDict`; nodes are pure functions `(state) -> dict`
+- `graph.compile(checkpointer=MemorySaver())` so interrupts persist between Streamlit rerenders
 - Invoke with `graph.invoke(state, config={"configurable": {"thread_id": session_id}})`
+
+## Testing note
+
+Grading calls cost money — when testing, prefer the grammar module (fully offline) and avoid
+submitting letters/descriptions unless the grading path itself changed.

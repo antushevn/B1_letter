@@ -3,28 +3,15 @@ import random
 from functools import lru_cache
 from pathlib import Path
 
-from anthropic import Anthropic
-from dotenv import load_dotenv
 from langgraph.types import interrupt
 
-from . import storage
+from ..common import storage
+from ..common.llm import CHECK_MODEL, FEEDBACK_LANGUAGES, TOPIC_MODEL, client, extract_json
 from .prompts import CHECK_SYSTEM, CHECK_USER_TEMPLATE, TOPIC_SYSTEM, TOPIC_USER
 from .state import PracticeState
 
-load_dotenv()
-
-_client = Anthropic()
-
-# Model tiering: topic generation is an easy task, so keep it on cheap Haiku.
-# CHECK_MODEL is the single knob to bump when moving grading to a pricier model.
-TOPIC_MODEL = "claude-haiku-4-5-20251001"
-CHECK_MODEL = "claude-haiku-4-5-20251001"
-
 # Pre-generated pool of German tasks (built offline via scripts/build_topic_pool.py).
-_TOPIC_POOL_PATH = Path(__file__).resolve().parent.parent / "data" / "topics.json"
-
-# Feedback language names passed to the examiner prompt, keyed by UI language code.
-FEEDBACK_LANGUAGES = {"ru": "Russian", "de": "German", "en": "English"}
+_TOPIC_POOL_PATH = Path(__file__).resolve().parent.parent.parent / "data" / "topics.json"
 
 
 @lru_cache(maxsize=1)
@@ -42,7 +29,7 @@ def generate_topic(state: PracticeState) -> dict:
         return {"topic": random.choice(pool)}
 
     # Fallback: no pool yet — generate live on the cheap topic model.
-    response = _client.messages.create(
+    response = client.messages.create(
         model=TOPIC_MODEL,
         max_tokens=512,
         system=TOPIC_SYSTEM,
@@ -59,7 +46,7 @@ def await_letter(state: PracticeState) -> dict:
 def check_letter(state: PracticeState) -> dict:
     feedback_language = FEEDBACK_LANGUAGES.get(state.get("language", "en"), "English")
     system = CHECK_SYSTEM.replace("{feedback_language}", feedback_language)
-    response = _client.messages.create(
+    response = client.messages.create(
         model=CHECK_MODEL,
         max_tokens=2048,
         system=system,
@@ -74,10 +61,7 @@ def check_letter(state: PracticeState) -> dict:
             }
         ],
     )
-    raw = response.content[0].text.strip()
-    if raw.startswith("```"):
-        raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
-    data = json.loads(raw)
+    data = json.loads(extract_json(response.content[0].text))
 
     errors = []
     for err in data.get("errors", []) or []:
@@ -101,11 +85,14 @@ def check_letter(state: PracticeState) -> dict:
     }
 
     # Persist the graded attempt for statistics / exam-readiness tracking.
-    storage.save_attempt({
-        "language": state.get("language", "en"),
-        "topic": state.get("topic", ""),
-        "user_letter": state.get("user_letter", ""),
-        **result,
-    })
+    storage.save_attempt(
+        {
+            "language": state.get("language", "en"),
+            "topic": state.get("topic", ""),
+            "user_letter": state.get("user_letter", ""),
+            **result,
+        },
+        module="letter",
+    )
 
     return result

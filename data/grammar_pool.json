@@ -1,0 +1,3055 @@
+{
+  "indirekte_fragen": [
+    {
+      "type": "gap",
+      "prompt": "Können Sie mir sagen, wie ich zur Apotheke ___? (Hinweis: kommen)",
+      "accepted": [
+        "komme",
+        "Komme"
+      ],
+      "explanation": {
+        "ru": "В косвенном вопросе глагол переходит в конец предложения; форма зависит от подлежащего (ich).",
+        "de": "In der indirekten Frage steht das Verb am Ende des Nebensatzes.",
+        "en": "In an indirect question, the verb moves to the end of the clause."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Wissen Sie, ob die Post am Samstag ___? (Hinweis: offen sein)",
+      "accepted": [
+        "offen ist",
+        "Offen ist"
+      ],
+      "explanation": {
+        "ru": "В косвенном вопросе с ob глагол стоит в конце; порядок слов: подлежащее, дополнения, затем глагол.",
+        "de": "In der indirekten Frage mit ob folgt das Verb am Ende des Nebensatzes.",
+        "en": "In an indirect question with ob, the verb comes at the end of the clause."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Ich möchte fragen, warum er nicht mehr arbeitet.",
+        "Ich möchte fragen, warum nicht er mehr arbeitet.",
+        "Ich möchte fragen, warum arbeitet er nicht mehr."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "В косвенном вопросе с W-словом глагол стоит в конце; W-слово остаётся на месте.",
+        "de": "Bei indirekten W-Fragen bleibt das W-Wort und der Verb geht ans Ende des Nebensatzes.",
+        "en": "In indirect questions with W-words, the W-word stays and the verb moves to the end."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Der Chef möchte wissen, ob wir das Projekt bis Freitag fertig machen.",
+        "Der Chef möchte wissen, ob wir das Projekt bis Freitag fertig gemacht haben.",
+        "Der Chef möchte wissen, ob bis Freitag wir das Projekt fertig machen."
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "В косвенном вопросе о завершении действия используется Perfekt (haben + Partizip в конце).",
+        "de": "Für die Frage nach einem abgeschlossenen Projekt wird Perfekt verwendet (haben + Partizip am Ende der indirekten Frage).",
+        "en": "For a question about a completed project, use Perfekt (haben + participle at the end of the indirect question)."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Ich weiß nicht, ___ die Miete im nächsten Monat kostet. (Hinweis: wie viel)",
+      "accepted": [
+        "wie viel",
+        "wieviel"
+      ],
+      "explanation": {
+        "ru": "Косвенный вопрос с W-словом 'wieviel' сохраняет это слово в начале; глагол стоит в конце.",
+        "de": "In der indirekten Frage bleibt das W-Wort 'wieviel' und das Verb kostet steht am Ende.",
+        "en": "In the indirect question, the W-word 'wieviel' remains and the verb goes to the end."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Sie fragt, ob Sie mit dem Auto fahren können.",
+        "Sie fragt, ob mit dem Auto fahren Sie können.",
+        "Sie fragt, ob fahren Sie mit dem Auto können."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "В косвенном вопросе с ob и модальным глаголом порядок: подлежащее, дополнения, модальный глагол + инфинитив в конце.",
+        "de": "Bei indirekten Fragen mit ob und Modalverben: Subjekt, Objekte, dann Modalverb + Infinitiv am Ende.",
+        "en": "In indirect questions with ob and modal verbs: subject, objects, then modal verb + infinitive at the end."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Können Sie mir sagen, welcher Arzt hier im Krankenhaus ___? (Hinweis: arbeiten)",
+      "accepted": [
+        "arbeitet",
+        "Arbeitet"
+      ],
+      "explanation": {
+        "ru": "В косвенном вопросе с W-словом глагол стоит в конце; форма зависит от подлежащего (welcher Arzt = он).",
+        "de": "In der indirekten W-Frage steht das Verb am Ende; die Form richtet sich nach dem Subjekt.",
+        "en": "In an indirect W-question, the verb goes to the end; the form depends on the subject."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Ich möchte wissen, ob du nächste Woche zu meinem Geburtstag kommst.",
+        "Ich möchte wissen, ob du nächste Woche zu meinem Geburtstag kommen.",
+        "Ich möchte wissen, ob kommst du nächste Woche zu meinem Geburtstag."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "В косвенном вопросе с ob глагол переходит в конец; здесь используется Präsens (kommst).",
+        "de": "In der indirekten Frage mit ob steht das Präsens-Verb am Ende des Nebensatzes.",
+        "en": "In an indirect question with ob, the present tense verb goes to the end of the clause."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Der Lehrer fragt, wer die Hausaufgaben schon ___? (Hinweis: machen)",
+      "accepted": [
+        "gemacht hat",
+        "Gemacht hat"
+      ],
+      "explanation": {
+        "ru": "В косвенном вопросе с W-словом 'wer' глагол в Perfekt стоит в конце (hat + Partizip).",
+        "de": "In der indirekten W-Frage mit 'wer' und Perfekt: das Partizip folgt nach dem Hilfsverb am Ende.",
+        "en": "In an indirect W-question with 'wer' and Perfekt: the participle follows the auxiliary verb at the end."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Ich weiß nicht, ob er die neue Stelle ___ ___. (Hinweis: haben + annehmen)",
+      "accepted": [
+        "angenommen hat",
+        "Angenommen hat"
+      ],
+      "explanation": {
+        "ru": "В косвенном вопросе с Perfekt оба слова глагола стоят в конце (Partizip + haben).",
+        "de": "In der indirekten Frage mit Perfekt: Partizip und Hilfsverb stehen beide am Ende (Partizip + haben).",
+        "en": "In an indirect question with Perfekt: both parts of the verb go to the end (participle + haben)."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Mutter fragt, ob wir zum Einkaufen mitgehen wollen.",
+        "Mutter fragt, ob wir wollen zum Einkaufen mitgehen.",
+        "Mutter fragt, ob wollen wir zum Einkaufen mitgehen."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "В косвенном вопросе с ob и модальным глаголом структура: подлежащее + дополнения + модальный глагол + инфинитив в конце.",
+        "de": "Bei indirekten Fragen mit ob und Modalverben: Subjekt, Ergänzungen, Modalverb + Infinitiv am Ende.",
+        "en": "In indirect questions with ob and modal verbs: subject, complements, modal verb + infinitive at the end."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Sag mir bitte, ___ der nächste Bus kommt. (Hinweis: wann)",
+      "accepted": [
+        "wann",
+        "Wann"
+      ],
+      "explanation": {
+        "ru": "В косвенной W-Frage W-слово сохраняется в начале; глагол стоит в конце предложения.",
+        "de": "In der indirekten W-Frage bleibt das W-Wort am Anfang und das Verb steht am Ende.",
+        "en": "In an indirect W-question, the W-word stays at the beginning and the verb goes to the end."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Wir wissen nicht, ob das Restaurant heute offen ist.",
+        "Wir wissen nicht, ob heute offen das Restaurant ist.",
+        "Wir wissen nicht, ob ist das Restaurant heute offen."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "В косвенном вопросе подлежащее идёт сразу после глагола-связки (ob), затем дополнения и предикат в конце.",
+        "de": "In der indirekten Frage mit ob folgt die Wortstellung: Subjekt, Objekte/Adverbien, dann das Prädikat am Ende.",
+        "en": "In an indirect question with ob, the word order is: subject, objects/adverbials, then the predicate at the end."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Kannst du mir sagen, wie lange die Prüfung ___? (Hinweis: dauern)",
+      "accepted": [
+        "dauert",
+        "Dauert"
+      ],
+      "explanation": {
+        "ru": "В косвенной W-Frage 'wie lange' W-слово сохраняется, глагол стоит в конце.",
+        "de": "In der indirekten W-Frage mit 'wie lange' bleibt das W-Wort und das Verb steht am Ende.",
+        "en": "In an indirect W-question with 'wie lange', the W-word remains and the verb goes to the end."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Der Arzt fragt, ob Sie allergisch gegen Penicillin sind.",
+        "Der Arzt fragt, ob gegen Penicillin Sie allergisch sind.",
+        "Der Arzt fragt, ob allergisch Sie gegen Penicillin sind."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "В косвенном вопросе с ob нормальный порядок слов: подлежащее, дополнения, предикат в конце.",
+        "de": "In der indirekten Frage mit ob: Subjekt, Objekt (gegen Penicillin), dann das Prädikat am Ende.",
+        "en": "In an indirect question with ob: subject, object (gegen Penicillin), then the predicate at the end."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Ich möchte wissen, wo Sie den Bus ___. (Hinweis: nehmen)",
+      "accepted": [
+        "nehmen",
+        "Nehmen"
+      ],
+      "explanation": {
+        "ru": "В косвенной W-Frage 'wo' W-слово сохраняется; глагол nehmen стоит в конце предложения.",
+        "de": "In der indirekten W-Frage mit 'wo' bleibt das W-Wort und das Verb steht am Ende.",
+        "en": "In an indirect W-question with 'wo', the W-word remains and the verb goes to the end."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Ich frage dich, ob du mich morgen besuchen kannst.",
+        "Ich frage dich, ob mich du morgen besuchen kannst.",
+        "Ich frage dich, ob kannst du mich morgen besuchen."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "В косвенном вопросе с ob и модальным глаголом структура: подлежащее, дополнение, затем модальный глагол + инфинитив.",
+        "de": "In der indirekten Frage mit ob und Modalverb: Subjekt, Objekt, Modalverb + Infinitiv am Ende.",
+        "en": "In an indirect question with ob and modal verb: subject, object, modal verb + infinitive at the end."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Weißt du, wie viel das Auto schon ___? (Hinweis: kosten)",
+      "accepted": [
+        "kostet",
+        "Kostet"
+      ],
+      "explanation": {
+        "ru": "В косвенной W-Frage 'wieviel' W-слово остаётся; глагол стоит в конце предложения.",
+        "de": "In der indirekten W-Frage mit 'wieviel' bleibt das W-Wort und das Verb folgt am Ende.",
+        "en": "In an indirect W-question with 'wieviel', the W-word remains and the verb goes to the end."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Sie möchten wissen, ob ich den Vertrag schon unterschrieben habe.",
+        "Sie möchten wissen, ob ich den Vertrag schon habe unterschrieben.",
+        "Sie möchten wissen, ob habe ich den Vertrag schon unterschrieben."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "В косвенном вопросе с Perfekt порядок: подлежащее, дополнения, затем Partizip + haben в конце.",
+        "de": "In der indirekten Frage mit Perfekt: Subjekt, Objekt, dann Partizip + Hilfsverb am Ende.",
+        "en": "In an indirect question with Perfekt: subject, object, then participle + auxiliary verb at the end."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Können Sie mir sagen, wer heute den Unterricht ___? (Hinweis: leiten)",
+      "accepted": [
+        "leitet",
+        "Leitet"
+      ],
+      "explanation": {
+        "ru": "В косвенной W-Frage 'wer' W-слово сохраняется; глагол стоит в конце предложения.",
+        "de": "In der indirekten W-Frage mit 'wer' bleibt das W-Wort und das Verb steht am Ende.",
+        "en": "In an indirect W-question with 'wer', the W-word remains and the verb goes to the end."
+      }
+    }
+  ],
+  "nebensaetze": [
+    {
+      "type": "gap",
+      "prompt": "Sie weiß, dass ihr Sohn morgen nach Berlin ___. (fahren)",
+      "accepted": [
+        "fährt"
+      ],
+      "explanation": {
+        "ru": "После 'dass' глагол 'fahren' в 3-м лице единственного числа стоит в конце предложения.",
+        "de": "Nach 'dass' steht das konjugierte Verb 'fährt' am Ende des Nebensatzes.",
+        "en": "After 'dass', the conjugated verb 'fährt' is placed at the end of the clause."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Obwohl das Wetter schlecht ___, gehen wir spazieren. (sein)",
+      "accepted": [
+        "ist"
+      ],
+      "explanation": {
+        "ru": "После 'obwohl' глагол 'ist' стоит в конце уступительного придаточного предложения.",
+        "de": "Nach 'obwohl' steht das konjugierte Verb 'ist' am Ende des Nebensatzes.",
+        "en": "After 'obwohl', the conjugated verb 'ist' is at the end of the concessive clause."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Ich bin sicher, dass die Prüfung nicht schwierig ___. (sein)",
+      "accepted": [
+        "ist"
+      ],
+      "explanation": {
+        "ru": "После 'dass' спряженный глагол стоит в конце придаточного предложения.",
+        "de": "Nach 'dass' steht das konjugierte Verb am Ende des Nebensatzes.",
+        "en": "After 'dass', the conjugated verb is placed at the end of the subordinate clause."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Er bleibt zu Hause, obwohl er zum Fußballspiel gehen ___. (können)",
+      "accepted": [
+        "könnte",
+        "kann"
+      ],
+      "explanation": {
+        "ru": "После 'obwohl' спряженный глагол 'könnte' стоит в конце уступительного предложения.",
+        "de": "Nach 'obwohl' steht das konjugierte Verb am Ende des Nebensatzes.",
+        "en": "After 'obwohl', the conjugated verb 'könnte' is at the end of the concessive clause."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Das Auto ist teuer, weil es neue Reifen braucht.",
+        "Das Auto ist teuer, weil es braucht neue Reifen.",
+        "Das Auto ist teuer, weil neue Reifen braucht es."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "После 'weil' глагол 'braucht' в спряженной форме стоит в конце придаточного предложения.",
+        "de": "Nach 'weil' steht das konjugierte Verb am Ende des Nebensatzes.",
+        "en": "After 'weil', the conjugated verb is at the end of the subordinate clause."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Wenn du zum Einkaufen ___, vergiss nicht die Liste. (gehen)",
+      "accepted": [
+        "gehst"
+      ],
+      "explanation": {
+        "ru": "После 'wenn' глагол 'gehst' стоит в конце условного придаточного предложения.",
+        "de": "Nach 'wenn' steht das konjugierte Verb am Ende des Nebensatzes.",
+        "en": "After 'wenn', the conjugated verb 'gehst' is at the end of the conditional clause."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Ich weiß, dass sie nächste Woche zurückkommt.",
+        "Ich weiß, dass nächste Woche sie zurückkommt.",
+        "Ich weiß, dass sie zurück nächste Woche kommt."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "После 'dass' спряженный глагол 'kommt' стоит в конце придаточного предложения.",
+        "de": "Nach 'dass' steht das konjugierte Verb am Ende des Nebensatzes.",
+        "en": "After 'dass', the conjugated verb 'kommt' is at the end of the subordinate clause."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Obwohl er müde ___, arbeitet er noch zwei Stunden. (sein)",
+      "accepted": [
+        "ist"
+      ],
+      "explanation": {
+        "ru": "После 'obwohl' глагол 'ist' стоит в конце уступительного придаточного предложения.",
+        "de": "Nach 'obwohl' steht das konjugierte Verb am Ende des Nebensatzes.",
+        "en": "After 'obwohl', the conjugated verb 'ist' is at the end of the concessive clause."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Weil ich keine Zeit habe, kann ich nicht mitgehen.",
+        "Weil ich kann nicht mitgehen, habe ich keine Zeit.",
+        "Weil ich habe keine Zeit, kann ich nicht mitgehen."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "После 'weil' спряженный глагол 'habe' стоит в конце придаточного предложения.",
+        "de": "Nach 'weil' steht das konjugierte Verb am Ende des Nebensatzes.",
+        "en": "After 'weil', the conjugated verb 'habe' is at the end of the subordinate clause."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Der Arzt sagt, dass ich mehr Wasser ___ ___. (trinken müssen)",
+      "accepted": [
+        "trinken muss",
+        "trinken muß"
+      ],
+      "explanation": {
+        "ru": "После 'dass' оба глагола стоят в конце: модальный глагол 'muss' в позиции спряженного глагола и инфинитив 'trinken'.",
+        "de": "Nach 'dass' steht die Verbgruppe am Ende: Infinitiv und konjugiertes Modalverb.",
+        "en": "After 'dass', the verb group is at the end: infinitive and conjugated modal verb."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Wenn es morgen regnet, bleibe ich im Haus.",
+        "Wenn es morgen regnet bleibe, ich im Haus.",
+        "Wenn es regnet morgen, im Haus ich bleibe."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "После 'wenn' глагол 'regnet' стоит в конце условного придаточного; главное предложение следует с нормальным порядком слов.",
+        "de": "Nach 'wenn' steht das konjugierte Verb am Ende des Nebensatzes; der Hauptsatz hat normale Wortstellung.",
+        "en": "After 'wenn', the conjugated verb is at the end; the main clause follows with normal word order."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Die Lehrerin erklärt, dass wir die Aufgabe bis morgen ___. (machen sollen)",
+      "accepted": [
+        "machen sollen"
+      ],
+      "explanation": {
+        "ru": "После 'dass' глагольная группа стоит в конце: инфинитив 'machen' и спряженный модальный глагол 'sollen'.",
+        "de": "Nach 'dass' steht die Verbgruppe am Ende: Infinitiv und konjugiertes Modalverb.",
+        "en": "After 'dass', the verb group is at the end: infinitive and conjugated modal verb."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Weil der Zug Verspätung ___, komme ich später an. (haben)",
+      "accepted": [
+        "hat"
+      ],
+      "explanation": {
+        "ru": "После 'weil' спряженный глагол 'hat' стоит в конце причинного придаточного предложения.",
+        "de": "Nach 'weil' steht das konjugierte Verb am Ende des Nebensatzes.",
+        "en": "After 'weil', the conjugated verb 'hat' is at the end of the subordinate clause."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Wenn du mit mir sprechen möchtest, ruf mich an.",
+        "Wenn du mit mir sprechen möchtest ruf, mich an.",
+        "Wenn du anrufen möchtest, sprichst du mit mir."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "После 'wenn' спряженный модальный глагол 'möchtest' стоит в конце условного придаточного предложения.",
+        "de": "Nach 'wenn' steht das konjugierte Modalverb am Ende des Nebensatzes.",
+        "en": "After 'wenn', the conjugated modal verb 'möchtest' is at the end of the conditional clause."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Weil die Miete zu hoch ___, suchen wir eine neue Wohnung. (sein)",
+      "accepted": [
+        "ist"
+      ],
+      "explanation": {
+        "ru": "После 'weil' спряженный глагол 'ist' стоит в конце причинного придаточного предложения.",
+        "de": "Nach 'weil' steht das konjugierte Verb am Ende des Nebensatzes.",
+        "en": "After 'weil', the conjugated verb 'ist' is at the end of the subordinate clause."
+      }
+    }
+  ],
+  "verben_praepositionen": [
+    {
+      "type": "mc",
+      "prompt": "Wählе den korrekten Satz:",
+      "options": [
+        "Ich freue mich über meinen Urlaub nächsten Monat.",
+        "Ich freue mich auf meinen Urlaub nächsten Monat.",
+        "Ich freue mich für meinen Urlaub nächsten Monat."
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Фраза «sich freuen auf» используется для будущих событий, которые мы ждём.",
+        "de": "«sich freuen auf + Akkusativ» drückt Vorfreude auf ein zukünftiges Ereignis aus.",
+        "en": "«sich freuen auf + accusative» expresses anticipation of a future event."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wählе den korrekten Satz:",
+      "options": [
+        "Ich interessiere mich für die Geschichte der Kunst.",
+        "Ich interessiere mich an die Geschichte der Kunst.",
+        "Ich interessiere mich über die Geschichte der Kunst."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Фраза «sich interessieren» требует предлога «für» + аккузатив.",
+        "de": "«sich interessieren» wird immer mit «für + Akkusativ» konstruiert.",
+        "en": "«sich interessieren» is always constructed with «für + accusative»."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Denkst du manchmal ___ deine alte Grundschule? (Präposition)",
+      "accepted": [
+        "an"
+      ],
+      "explanation": {
+        "ru": "Глагол «denken» требует предлога «an» + аккузатив.",
+        "de": "Das Verb «denken» wird mit «an + Akkusativ» verwendet.",
+        "en": "The verb «denken» is used with «an + accusative»."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wählе den korrekten Satz:",
+      "options": [
+        "Sie ärgert sich auf die Unpünktlichkeit ihrer Kollegen.",
+        "Sie ärgert sich für die Unpünktlichkeit ihrer Kollegen.",
+        "Sie ärgert sich über die Unpünktlichkeit ihrer Kollegen."
+      ],
+      "answer": 2,
+      "explanation": {
+        "ru": "Фраза «sich ärgern» требует предлога «über» + аккузатив для выражения раздражения.",
+        "de": "«sich ärgern» wird mit «über + Akkusativ» verwendet, um Ärger auszudrücken.",
+        "en": "«sich ärgern» is used with «über + accusative» to express annoyance."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Nimmt dein Sohn ___ einem Tenniskurs teil? (Präposition)",
+      "accepted": [
+        "an"
+      ],
+      "explanation": {
+        "ru": "Глагол «teilnehmen» требует предлога «an» + датив.",
+        "de": "Das Verb «teilnehmen» wird mit «an + Dativ» konstruiert.",
+        "en": "The verb «teilnehmen» is constructed with «an + dative»."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Ich freue mich über das Geschenk, das ich heute bekommen habe. Aber ich freue mich auch ___ deinen Besuch nächstes Wochenende. (ein Wort)",
+      "accepted": [
+        "auf"
+      ],
+      "explanation": {
+        "ru": "«Sich freuen auf» используется для будущих событий, а «sich freuen über» для уже произошедших.",
+        "de": "«sich freuen auf» für zukünftige Ereignisse, «sich freuen über» für Vergangenes.",
+        "en": "«sich freuen auf» for future events, «sich freuen über» for past events."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wählе den korrekten Satz:",
+      "options": [
+        "Wir müssen mit unserem Chef über die neuen Arbeitsbedingungen sprechen.",
+        "Wir müssen auf unserem Chef über die neuen Arbeitsbedingungen sprechen.",
+        "Wir müssen für unserem Chef über die neuen Arbeitsbedingungen sprechen."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Глагол «sprechen» требует либо «mit + датив» (с кем), либо «über + аккузатив» (о чём).",
+        "de": "«sprechen» wird mit «mit + Dativ» (mit wem) oder «über + Akkusativ» (worüber) konstruiert.",
+        "en": "«sprechen» is constructed with «mit + dative» (with whom) or «über + accusative» (about what)."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Der Schüler entschuldigt sich ___ seine Abwesenheit im Unterricht. (Präposition)",
+      "accepted": [
+        "für"
+      ],
+      "explanation": {
+        "ru": "Глагол «sich entschuldigen» требует предлога «für» + аккузатив.",
+        "de": "Das Verb «sich entschuldigen» wird mit «für + Akkusativ» verwendet.",
+        "en": "The verb «sich entschuldigen» is used with «für + accusative»."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wählе den korrekten Satz:",
+      "options": [
+        "Sie wartet auf den Zug schon zwei Stunden.",
+        "Sie wartet für den Zug schon zwei Stunden.",
+        "Sie wartet an den Zug schon zwei Stunden."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Глагол «warten» всегда требует предлога «auf» + аккузатив.",
+        "de": "Das Verb «warten» wird immer mit «auf + Akkusativ» verwendet.",
+        "en": "The verb «warten» is always used with «auf + accusative»."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Ich freue mich ___ das neue Buch, das ich heute gekauft habe. (ein Wort)",
+      "accepted": [
+        "über"
+      ],
+      "explanation": {
+        "ru": "«Sich freuen über» используется для уже произошедших или завершённых событий.",
+        "de": "«sich freuen über» drückt Freude über etwas bereits Geschehenes aus.",
+        "en": "«sich freuen über» expresses joy about something that has already happened."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wählе den korrekten Satz:",
+      "options": [
+        "Er interessiert sich an Computer und Technologie.",
+        "Er interessiert sich für Computer und Technologie.",
+        "Er interessiert sich über Computer und Technologie."
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Глагол «sich interessieren» требует предлога «für» + аккузатив.",
+        "de": "«sich interessieren» wird mit «für + Akkusativ» konstruiert.",
+        "en": "«sich interessieren» is constructed with «für + accusative»."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Denk doch nicht immer ___ deine Probleme! (Präposition)",
+      "accepted": [
+        "an"
+      ],
+      "explanation": {
+        "ru": "Глагол «denken» требует предлога «an» + аккузатив.",
+        "de": "Das Verb «denken» wird mit «an + Akkusativ» verwendet.",
+        "en": "The verb «denken» is used with «an + accusative»."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wählе den korrekten Satz:",
+      "options": [
+        "Die Gäste freuen sich auf das köstliche Essen, das morgen serviert wird.",
+        "Die Gäste freuen sich über das köstliche Essen, das morgen serviert wird.",
+        "Die Gäste freuen sich für das köstliche Essen, das morgen serviert wird."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "«Sich freuen auf» используется для будущих событий, которые мы ждём с нетерпением.",
+        "de": "«sich freuen auf + Akkusativ» drückt Vorfreude auf ein zukünftiges Ereignis aus.",
+        "en": "«sich freuen auf + accusative» expresses anticipation of a future event."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Meine Großmutter ärgert sich ___ den Lärm von der Baustelle. (Präposition)",
+      "accepted": [
+        "über"
+      ],
+      "explanation": {
+        "ru": "Глагол «sich ärgern» требует предлога «über» + аккузатив для выражения раздражения.",
+        "de": "«sich ärgern» wird mit «über + Akkusativ» verwendet, um Ärger auszudrücken.",
+        "en": "«sich ärgern» is used with «über + accusative» to express annoyance."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wählе den korrekten Satz:",
+      "options": [
+        "Nimmt sie an der Yogaklasse teil?",
+        "Nimmt sie auf der Yogaklasse teil?",
+        "Nimmt sie für der Yogaklasse teil?"
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Глагол «teilnehmen» требует предлога «an» + датив.",
+        "de": "Das Verb «teilnehmen» wird mit «an + Dativ» konstruiert.",
+        "en": "The verb «teilnehmen» is constructed with «an + dative»."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Sprich bitte nicht ___ meine Schwester. Sie ist sehr empfindlich. (Präposition)",
+      "accepted": [
+        "über"
+      ],
+      "explanation": {
+        "ru": "Глагол «sprechen» с предлогом «über» + аккузатив означает «говорить о ком-то».",
+        "de": "«sprechen über + Akkusativ» bedeutet, über jemanden oder etwas reden.",
+        "en": "«sprechen über + accusative» means to talk about someone or something."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wählе den korrekten Satz:",
+      "options": [
+        "Der Kunde entschuldigt sich auf die lange Wartezeit.",
+        "Der Kunde entschuldigt sich für die lange Wartezeit.",
+        "Der Kunde entschuldigt sich über die lange Wartezeit."
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Глагол «sich entschuldigen» требует предлога «für» + аккузатив.",
+        "de": "Das Verb «sich entschuldigen» wird mit «für + Akkusativ» verwendet.",
+        "en": "The verb «sich entschuldigen» is used with «für + accusative»."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Meine Eltern warten schon lange ___ meine Ankunft. (Präposition)",
+      "accepted": [
+        "auf"
+      ],
+      "explanation": {
+        "ru": "Глагол «warten» требует предлога «auf» + аккузатив.",
+        "de": "Das Verb «warten» wird mit «auf + Akkusativ» verwendet.",
+        "en": "The verb «warten» is used with «auf + accusative»."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wählе den korrekten Satz:",
+      "options": [
+        "Ich interessiere mich nicht für Fußball.",
+        "Ich interessiere mich nicht an Fußball.",
+        "Ich interessiere mich nicht über Fußball."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Глагол «sich interessieren» требует предлога «für» + аккузатив.",
+        "de": "«sich interessieren» wird immer mit «für + Akkusativ» konstruiert.",
+        "en": "«sich interessieren» is always constructed with «für + accusative»."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wählе den korrekten Satz:",
+      "options": [
+        "Sie ärgert sich für den Verkehr.",
+        "Sie ärgert sich über den Verkehr.",
+        "Sie ärgert sich an den Verkehr."
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Глагол «sich ärgern» требует предлога «über» + аккузатив для выражения раздражения.",
+        "de": "«sich ärgern» wird mit «über + Akkusativ» verwendet, um Ärger auszudrücken.",
+        "en": "«sich ärgern» is used with «über + accusative» to express annoyance."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Denkst du an ___ ? (Pronomen, 3. Person Singular, Akkusativ)",
+      "accepted": [
+        "ihn",
+        "sie",
+        "es"
+      ],
+      "explanation": {
+        "ru": "Глагол «denken» требует предлога «an» + аккузатив, поэтому используется аккузативное местоимение.",
+        "de": "Das Verb «denken» wird mit «an + Akkusativ» verwendet, daher das Akkusativpronomen.",
+        "en": "The verb «denken» is used with «an + accusative», so the accusative pronoun is used."
+      }
+    }
+  ],
+  "komparativ": [
+    {
+      "type": "mc",
+      "prompt": "Dieser Film ist ___ als der andere.",
+      "options": [
+        "interessanter",
+        "interessanter wie",
+        "mehr interessant"
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Сравнительная степень с 'als' образуется добавлением суффикса -er к прилагательному.",
+        "de": "Der Komparativ wird mit dem Suffix -er und der Vergleichspartikel 'als' gebildet.",
+        "en": "The comparative is formed by adding -er to the adjective and using 'als' for comparison."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Meine Tochter ist ___ als mein Sohn. (jung)",
+      "accepted": [
+        "jünger",
+        "Jünger"
+      ],
+      "explanation": {
+        "ru": "При сравнении с 'als' добавляется суффикс -er, с умлаутом у трёхсложных прилагательных.",
+        "de": "Im Komparativ mit 'als' wird -er angehängt; 'jung' wird zu 'jünger' mit Umlaut.",
+        "en": "In the comparative with 'als', -er is added; 'jung' becomes 'jünger' with umlaut."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Ich esse ___ Obst als Gemüse. (gern)",
+      "accepted": [
+        "lieber",
+        "Lieber"
+      ],
+      "explanation": {
+        "ru": "Глагол 'gern' имеет неправильное сравнение: gern → lieber → am liebsten.",
+        "de": "'gern' ist unregelmäßig: gern → lieber → am liebsten.",
+        "en": "'gern' is irregular: gern → lieber → am liebsten."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Welcher Satz ist richtig?",
+      "options": [
+        "Dein Zimmer ist so groß wie meins.",
+        "Dein Zimmer ist so groß als meins.",
+        "Dein Zimmer ist größer wie meins."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "При сравнении равенства используется 'so … wie', при различии — 'Komparativ … als'.",
+        "de": "Bei Gleichheit: 'so … wie'; bei Unterschied: Komparativ + 'als'.",
+        "en": "For equality: 'so … wie'; for difference: comparative + 'als'."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Das ist die ___ Lösung für dieses Problem. (gut)",
+      "accepted": [
+        "beste",
+        "Beste"
+      ],
+      "explanation": {
+        "ru": "'gut' имеет неправильное сравнение: gut → besser → am besten/beste.",
+        "de": "'gut' ist unregelmäßig: gut → besser → am besten (Superlativ).",
+        "en": "'gut' is irregular: gut → besser → am besten (superlative)."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Hamburg ist ___ als Bremen.",
+      "options": [
+        "größer",
+        "mehr groß",
+        "so groß"
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Сравнительная степень в немецком — это всегда одно слово, никогда не используется 'mehr' + прилагательное.",
+        "de": "Der Komparativ ist im Deutschen immer ein Wort; nie 'mehr' + Adjektiv.",
+        "en": "In German, the comparative is always one word; never 'mehr' + adjective."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Sie arbeitet am ___ in unserem Unternehmen. (viel)",
+      "accepted": [
+        "meisten"
+      ],
+      "explanation": {
+        "ru": "'viel' имеет неправильное сравнение: viel → mehr → am meisten.",
+        "de": "'viel' ist unregelmäßig: viel → mehr → am meisten.",
+        "en": "'viel' is irregular: viel → mehr → am meisten."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Der Winter ist ___ als der Herbst. (kalt)",
+      "accepted": [
+        "kälter",
+        "Kälter"
+      ],
+      "explanation": {
+        "ru": "При сравнении с 'als' добавляется суффикс -er, и гласные a, o, u получают умлаут.",
+        "de": "Im Komparativ wird -er angehängt; 'a' wird zu 'ä'.",
+        "en": "In the comparative, -er is added; 'a' becomes 'ä' (umlaut)."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Meine Schwester mag Pizza am ___. (gern)",
+      "accepted": [
+        "liebsten"
+      ],
+      "explanation": {
+        "ru": "Превосходная степень от 'gern': gern → lieber → am liebsten.",
+        "de": "Superlativ von 'gern': am liebsten.",
+        "en": "Superlative of 'gern': am liebsten."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Welcher Satz ist falsch?",
+      "options": [
+        "Dieses Auto ist schneller als deins.",
+        "Dieses Auto ist mehr schnell als deins.",
+        "Dieses Auto ist das schnellste Auto auf der Straße."
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Неправильно: 'mehr schnell' — стиль 'mehr' + прилагательное неграмотен; правильно: 'schneller'.",
+        "de": "'mehr schnell' ist falsch; 'schneller' ist der Komparativ.",
+        "en": "'mehr schnell' is incorrect; 'schneller' is the correct comparative."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Diese Wohnung ist so teuer ___ die andere. (wie)",
+      "accepted": [
+        "wie"
+      ],
+      "explanation": {
+        "ru": "При сравнении равенства с 'so' используется 'wie', а не 'als'.",
+        "de": "Bei Gleichheit wird 'so … wie' verwendet, nicht 'als'.",
+        "en": "For equality, 'so … wie' is used, not 'als'."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Im Sommer sind die Tage ___ als im Winter. (lang)",
+      "accepted": [
+        "länger",
+        "Länger"
+      ],
+      "explanation": {
+        "ru": "При сравнении с 'als' добавляется суффикс -er, гласная 'a' получает умлаут.",
+        "de": "Im Komparativ wird -er angehängt; 'a' wird zu 'ä'.",
+        "en": "In the comparative, -er is added; 'a' becomes 'ä'."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Mein Vater verdient ___ Geld als meine Mutter. (viel)",
+      "accepted": [
+        "mehr"
+      ],
+      "explanation": {
+        "ru": "Сравнительная степень 'viel' → 'mehr'.",
+        "de": "Der Komparativ von 'viel' ist 'mehr'.",
+        "en": "The comparative of 'viel' is 'mehr'."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Das neue Produkt ist ___ als das alte.",
+      "options": [
+        "praktischer",
+        "praktischerer",
+        "mehr praktisch"
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Сравнительная степень образуется одним словом: прилагательное + суффикс -er.",
+        "de": "Der Komparativ wird mit dem Suffix -er gebildet: praktischer.",
+        "en": "The comparative is formed with the suffix -er: praktischer."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Das ist die ___ Schule in der Region. (groß)",
+      "accepted": [
+        "größte",
+        "Größte"
+      ],
+      "explanation": {
+        "ru": "Превосходная степень 'groß' → 'am größten'; перед существительным: 'größte' (с умлаутом).",
+        "de": "Der Superlativ von 'groß' ist 'am größten'; vor dem Substantiv: 'größte'.",
+        "en": "The superlative of 'groß' is 'am größten'; before a noun: 'größte'."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Welcher Satz ist richtig?",
+      "options": [
+        "Sie ist am beste Ärztin der Klinik.",
+        "Sie ist die beste Ärztin der Klinik.",
+        "Sie ist die am besten Ärztin der Klinik."
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Перед существительным в превосходной степени используется 'die beste', а не 'am beste'.",
+        "de": "Vor dem Substantiv wird 'die beste' verwendet, nicht 'am beste'.",
+        "en": "Before a noun, 'die beste' is used, not 'am beste'."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Deine Idee ist so kreativ ___ meine. (wie)",
+      "accepted": [
+        "wie"
+      ],
+      "explanation": {
+        "ru": "При сравнении равенства используется 'so … wie'.",
+        "de": "Bei Gleichheit wird 'so … wie' verwendet.",
+        "en": "For equality, 'so … wie' is used."
+      }
+    }
+  ],
+  "perfekt": [
+    {
+      "type": "mc",
+      "prompt": "Letzten Monat ___ wir in den Urlaub nach Spanien gefahren.",
+      "options": [
+        "haben",
+        "sind",
+        "hatten"
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Глаголы движения с изменением места (fahren) требуют sein в Perfekt.",
+        "de": "Bewegungsverben mit Ortswechsel (fahren) bilden das Perfekt mit sein.",
+        "en": "Verbs of motion with change of location (fahren) form Perfekt with sein."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Ich ___ gestern um 7 Uhr aufgestanden. (sein/haben)",
+      "accepted": [
+        "bin"
+      ],
+      "explanation": {
+        "ru": "Aufstehen — это глагол изменения состояния, требует sein.",
+        "de": "Aufstehen ist ein Zustandsänderungsverb und braucht sein.",
+        "en": "Aufstehen is a change-of-state verb and requires sein."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Meine Mutter ___ einen neuen Pullover gekauft.",
+      "options": [
+        "ist",
+        "hat",
+        "war"
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Kaufen — это обычный глагол, требует haben в Perfekt.",
+        "de": "Kaufen ist ein normales Verb und braucht haben im Perfekt.",
+        "en": "Kaufen is a regular verb and requires haben in Perfekt."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Wir ___ den ganzen Tag im Büro gearbeitet. (haben/sein)",
+      "accepted": [
+        "haben"
+      ],
+      "explanation": {
+        "ru": "Работать (arbeiten) — это обычный глагол, требует haben.",
+        "de": "Arbeiten ist kein Bewegungs- oder Zustandsänderungsverb; es braucht haben.",
+        "en": "Arbeiten is neither a motion nor change-of-state verb; it requires haben."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Welcher Satz ist richtig?",
+      "options": [
+        "Er ist das Frühstück gegessen.",
+        "Er hat das Frühstück gegessen.",
+        "Er ist das Frühstück essen."
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Essen — это обычный глагол, требует haben + Partizip II (gegessen).",
+        "de": "Essen ist ein normales Verb; es braucht haben + Partizip II (gegessen).",
+        "en": "Essen is a regular verb; it requires haben + Partizip II (gegessen)."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Ich ___ gestern einen Film angeschaut. (haben/sein)",
+      "accepted": [
+        "habe"
+      ],
+      "explanation": {
+        "ru": "Anschauen — обычный глагол, требует haben в Perfekt.",
+        "de": "Anschauen ist ein Normalverb und braucht haben im Perfekt.",
+        "en": "Anschauen is a regular verb and requires haben in Perfekt."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Das Kind ___ um 20 Uhr eingeschlafen.",
+      "options": [
+        "hat",
+        "ist",
+        "hatte"
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Einschlafen — глагол изменения состояния (засыпание), требует sein.",
+        "de": "Einschlafen ist eine Zustandsänderung und braucht sein.",
+        "en": "Einschlafen is a change of state and requires sein."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Mein Freund ___ die ganze Nacht wach geblieben. (haben/sein)",
+      "accepted": [
+        "ist"
+      ],
+      "explanation": {
+        "ru": "Bleiben — глагол изменения состояния, требует sein в Perfekt.",
+        "de": "Bleiben ist ein Zustandsänderungsverb und braucht sein im Perfekt.",
+        "en": "Bleiben is a state-change verb and requires sein in Perfekt."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Sie ___ den Brief schon geschrieben.",
+      "options": [
+        "ist",
+        "haben",
+        "hat"
+      ],
+      "answer": 2,
+      "explanation": {
+        "ru": "Schreiben — обычный глагол (сильный: geschrieben), требует haben с 3-м лицом единственного числа.",
+        "de": "Schreiben ist ein Normalverb (stark: geschrieben) und braucht hat (3. Person Singular).",
+        "en": "Schreiben is a regular verb (strong: geschrieben) and requires hat (3rd person singular)."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Wir ___ ins Kino gegangen. (sein/haben)",
+      "accepted": [
+        "sind"
+      ],
+      "explanation": {
+        "ru": "Gehen — глагол движения, требует sein в Perfekt.",
+        "de": "Gehen ist ein Bewegungsverb und braucht sein im Perfekt.",
+        "en": "Gehen is a motion verb and requires sein in Perfekt."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Der Zug ___ pünktlich in Hamburg angekommen.",
+      "options": [
+        "hat",
+        "ist",
+        "waren"
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Ankommen — глагол прибытия (движение с изменением места), требует sein.",
+        "de": "Ankommen ist ein Ankunftsverb (Bewegung mit Ortswechsel) und braucht sein.",
+        "en": "Ankommen is an arrival verb (motion with change of location) and requires sein."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Sie ___ einen Kuchen gebacken. (haben/sein)",
+      "accepted": [
+        "hat"
+      ],
+      "explanation": {
+        "ru": "Backen — обычный глагол, требует haben в Perfekt (3-е лицо единственного числа: hat).",
+        "de": "Backen ist ein Normalverb und braucht haben im Perfekt (3. Person Singular: hat).",
+        "en": "Backen is a regular verb and requires haben in Perfekt (3rd person singular: hat)."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Welcher Satz ist richtig?",
+      "options": [
+        "Ich bin ein Lied gesungen.",
+        "Ich habe ein Lied gesungen.",
+        "Ich bin ein Lied singen."
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Singen — обычный глагол, требует haben + Partizip II (gesungen).",
+        "de": "Singen ist ein Normalverb; es braucht haben + Partizip II (gesungen).",
+        "en": "Singen is a regular verb; it requires haben + Partizip II (gesungen)."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Die Schüler ___ eine Stunde Sport gemacht. (haben/sein)",
+      "accepted": [
+        "haben"
+      ],
+      "explanation": {
+        "ru": "Machen — обычный глагол, требует haben в Perfekt.",
+        "de": "Machen ist ein Normalverb und braucht haben im Perfekt.",
+        "en": "Machen is a regular verb and requires haben in Perfekt."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Er ___ schnell zum Bahnhof gelaufen.",
+      "options": [
+        "hat",
+        "ist",
+        "hatte"
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Laufen — глагол движения, требует sein в Perfekt.",
+        "de": "Laufen ist ein Bewegungsverb und braucht sein im Perfekt.",
+        "en": "Laufen is a motion verb and requires sein in Perfekt."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Ich ___ das Zimmer aufgeräumt. (haben/sein)",
+      "accepted": [
+        "habe"
+      ],
+      "explanation": {
+        "ru": "Aufräumen — обычный глагол, требует haben в Perfekt.",
+        "de": "Aufräumen ist ein Normalverb und braucht haben im Perfekt.",
+        "en": "Aufräumen is a regular verb and requires haben in Perfekt."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Sie ___ die Tür geöffnet.",
+      "options": [
+        "sind",
+        "hat",
+        "waren"
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Öffnen — обычный глагол (слабый: geöffnet), требует haben с 3-м лицом единственного числа.",
+        "de": "Öffnen ist ein Normalverb (schwach: geöffnet) und braucht hat (3. Person Singular).",
+        "en": "Öffnen is a regular verb (weak: geöffnet) and requires hat (3rd person singular)."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Der Patient ___ ins Krankenhaus gebracht worden. (sein/haben)",
+      "accepted": [
+        "ist"
+      ],
+      "explanation": {
+        "ru": "В страдательном залоге с движением (gebracht) используется sein.",
+        "de": "Im Passiv mit Bewegungsverben (gebracht) wird sein verwendet.",
+        "en": "In passive voice with motion verbs (gebracht), sein is used."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Welcher Satz ist richtig?",
+      "options": [
+        "Das Flugzeug ist in Berlin gelandet.",
+        "Das Flugzeug hat in Berlin gelandet.",
+        "Das Flugzeug war in Berlin landen."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Landen — глагол движения (приземление), требует sein + Partizip II (gelandet).",
+        "de": "Landen ist ein Bewegungsverb (Landung) und braucht sein + Partizip II (gelandet).",
+        "en": "Landen is a motion verb (landing) and requires sein + Partizip II (gelandet)."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Wir ___ im Restaurant gegessen. (haben/sein)",
+      "accepted": [
+        "haben"
+      ],
+      "explanation": {
+        "ru": "Essen — обычный глагол, требует haben в Perfekt.",
+        "de": "Essen ist ein Normalverb und braucht haben im Perfekt.",
+        "en": "Essen is a regular verb and requires haben in Perfekt."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Der Kranke ___ endlich genesen.",
+      "options": [
+        "hat",
+        "ist",
+        "hatte"
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Genesen — глагол изменения состояния (выздоровление), требует sein.",
+        "de": "Genesen ist eine Zustandsänderung (Genesung) und braucht sein.",
+        "en": "Genesen is a change of state (recovery) and requires sein."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Meine Schwester ___ gestern angerufen. (haben/sein)",
+      "accepted": [
+        "hat"
+      ],
+      "explanation": {
+        "ru": "Anrufen — обычный глагол, требует haben в Perfekt с 3-м лицом единственного числа.",
+        "de": "Anrufen ist ein Normalverb und braucht hat im Perfekt (3. Person Singular).",
+        "en": "Anrufen is a regular verb and requires hat in Perfekt (3rd person singular)."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Sie ___ drei Stunden geschlafen.",
+      "options": [
+        "ist",
+        "hat",
+        "waren"
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Schlafen — обычный глагол, требует haben + Partizip II (geschlafen).",
+        "de": "Schlafen ist ein Normalverb und braucht haben + Partizip II (geschlafen).",
+        "en": "Schlafen is a regular verb and requires haben + Partizip II (geschlafen)."
+      }
+    }
+  ],
+  "dativ_akkusativ": [
+    {
+      "type": "gap",
+      "prompt": "Die Kinder spielen gegen ___ andere Mannschaft. (das)",
+      "accepted": [
+        "das"
+      ],
+      "explanation": {
+        "ru": "Предлог 'gegen' всегда требует аккузатива; нейтральное существительное в аккузативе — 'das'.",
+        "de": "Die Präposition 'gegen' verlangt immer den Akkusativ; das Neutrum im Akkusativ bleibt 'das'.",
+        "en": "The preposition 'gegen' always requires accusative; neuter noun in accusative is 'das'."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Wir fahren mit ___ Fahrrad zur Schule. (das)",
+      "accepted": [
+        "dem"
+      ],
+      "explanation": {
+        "ru": "Предлог 'mit' требует дативу; нейтральное существительное в дативе — 'dem'.",
+        "de": "Die Präposition 'mit' verlangt den Dativ; das Neutrum im Dativ ist 'dem'.",
+        "en": "The preposition 'mit' requires dative; neuter noun in dative is 'dem'."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Das Buch gehört ___ Schülerin.",
+      "options": [
+        "die",
+        "der",
+        "den"
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Глагол 'gehören' требует дативу; женский род в дативе — 'der'.",
+        "de": "Das Verb 'gehören' verlangt den Dativ; das Femininum im Dativ ist 'der'.",
+        "en": "The verb 'gehören' requires dative; feminine noun in dative is 'der'."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Er arbeitet bei ___ großen Firma. (die)",
+      "accepted": [
+        "der"
+      ],
+      "explanation": {
+        "ru": "Предлог 'bei' требует дативу; женский род в дативе — 'der'.",
+        "de": "Die Präposition 'bei' verlangt den Dativ; das Femininum im Dativ ist 'der'.",
+        "en": "The preposition 'bei' requires dative; feminine noun in dative is 'der'."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Ich sehe ___ Hund in dem Park.",
+      "options": [
+        "den",
+        "dem",
+        "der"
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Глагол 'sehen' требует аккузатива; мужской род в аккузативе — 'den'.",
+        "de": "Das Verb 'sehen' verlangt den Akkusativ; das Maskulinum im Akkusativ ist 'den'.",
+        "en": "The verb 'sehen' requires accusative; masculine noun in accusative is 'den'."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Sie fahren um ___ See herum. (der)",
+      "accepted": [
+        "den"
+      ],
+      "explanation": {
+        "ru": "Предлог 'um' требует аккузатива; мужской род в аккузативе — 'den'.",
+        "de": "Die Präposition 'um' verlangt den Akkusativ; das Maskulinum im Akkusativ ist 'den'.",
+        "en": "The preposition 'um' requires accusative; masculine noun in accusative is 'den'."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wir danken ___ Ärztin für ihre Hilfe.",
+      "options": [
+        "den",
+        "der",
+        "dem"
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Глагол 'danken' требует дативу; женский род в дативе — 'der'.",
+        "de": "Das Verb 'danken' verlangt den Dativ; das Femininum im Dativ ist 'der'.",
+        "en": "The verb 'danken' requires dative; feminine noun in dative is 'der'."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Das Essen kommt aus ___ italienischen Restaurant. (das)",
+      "accepted": [
+        "dem"
+      ],
+      "explanation": {
+        "ru": "Предлог 'aus' требует дативу; нейтральное существительное в дативе — 'dem'.",
+        "de": "Die Präposition 'aus' verlangt den Dativ; das Neutrum im Dativ ist 'dem'.",
+        "en": "The preposition 'aus' requires dative; neuter noun in dative is 'dem'."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Ich helfe ___ älteren Herren mit seinen Paketen. (der)",
+      "accepted": [
+        "dem"
+      ],
+      "explanation": {
+        "ru": "Глагол 'helfen' требует дативу; мужской род в дативе — 'dem'.",
+        "de": "Das Verb 'helfen' verlangt den Dativ; das Maskulinum im Dativ ist 'dem'.",
+        "en": "The verb 'helfen' requires dative; masculine noun in dative is 'dem'."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Das Geschenk ist von ___ Großmutter.",
+      "options": [
+        "der",
+        "den",
+        "dem"
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Предлог 'von' требует дативу; женский род в дативе — 'der'.",
+        "de": "Die Präposition 'von' verlangt den Dativ; das Femininum im Dativ ist 'der'.",
+        "en": "The preposition 'von' requires dative; feminine noun in dative is 'der'."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Das Auto fährt durch ___ dunklen Tunnel. (der)",
+      "accepted": [
+        "den"
+      ],
+      "explanation": {
+        "ru": "Предлог 'durch' требует аккузатива; мужской род в аккузативе — 'den'.",
+        "de": "Die Präposition 'durch' verlangt den Akkusativ; das Maskulinum im Akkusativ ist 'den'.",
+        "en": "The preposition 'durch' requires accusative; masculine noun in accusative is 'den'."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Ich höre ___ Musik sehr gerne. (die)",
+      "accepted": [
+        "die"
+      ],
+      "explanation": {
+        "ru": "Глагол 'hören' требует аккузатива; женский род в аккузативе — 'die'.",
+        "de": "Das Verb 'hören' verlangt den Akkusativ; das Femininum im Akkusativ ist 'die'.",
+        "en": "The verb 'hören' requires accusative; feminine noun in accusative is 'die'."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Das gefällt ___ Arbeitskollegen sehr gut.",
+      "options": [
+        "den",
+        "dem",
+        "der"
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Глагол 'gefallen' требует дативу; мужской род в дативе — 'dem'.",
+        "de": "Das Verb 'gefallen' verlangt den Dativ; das Maskulinum im Dativ ist 'dem'.",
+        "en": "The verb 'gefallen' requires dative; masculine noun in dative is 'dem'."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Ich verstehe ___ Erklärung nicht. (die)",
+      "accepted": [
+        "die"
+      ],
+      "explanation": {
+        "ru": "Глагол 'verstehen' требует аккузатива; женский род в аккузативе — 'die'.",
+        "de": "Das Verb 'verstehen' verlangt den Akkusativ; das Femininum im Akkusativ ist 'die'.",
+        "en": "The verb 'verstehen' requires accusative; feminine noun in accusative is 'die'."
+      }
+    }
+  ],
+  "wechselpraepositionen": [
+    {
+      "type": "mc",
+      "prompt": "Wähle den korrekten Satz:",
+      "options": [
+        "Ich gehe in dem Supermarkt.",
+        "Ich gehe in den Supermarkt.",
+        "Ich gehe in der Supermarkt."
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "После движения (gehen) используется аккузатив (in + den).",
+        "de": "Nach Bewegungsverben (gehen) steht der Akkusativ (in + den).",
+        "en": "After movement verbs (gehen), use the accusative (in + den)."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Die Kinder spielen ___ Garten. (Hinweis: Position, wo?)",
+      "accepted": [
+        "im",
+        "in dem"
+      ],
+      "explanation": {
+        "ru": "Где дети? Дома, в саду = дативная форма (im).",
+        "de": "Wo spielen die Kinder? Position braucht Dativ (im Garten).",
+        "en": "Where are the children playing? Position requires dative (im Garten)."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle die richtige Präposition und den richtigen Kasus:",
+      "options": [
+        "Der Stuhl steht neben dem Fenster.",
+        "Der Stuhl steht neben den Fenster.",
+        "Der Stuhl steht neben das Fenster."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Где стоит стул? Местоположение = дативная форма (neben dem).",
+        "de": "Wo steht der Stuhl? Position braucht Dativ (neben dem Fenster).",
+        "en": "Where is the chair standing? Position requires dative (neben dem Fenster)."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Ich stelle den Fernseher ___ Wohnzimmer. (Hinweis: Bewegung, wohin?)",
+      "accepted": [
+        "ins",
+        "in das"
+      ],
+      "explanation": {
+        "ru": "Куда ставим телевизор? Движение = аккузатив (ins Wohnzimmer).",
+        "de": "Wohin stelle ich den Fernseher? Bewegung braucht Akkusativ (ins Wohnzimmer).",
+        "en": "Where am I putting the TV? Movement requires accusative (ins Wohnzimmer)."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Das Poster hängt ___ der Wand. (Hinweis: Position)",
+      "accepted": [
+        "an"
+      ],
+      "explanation": {
+        "ru": "Где висит постер? На стене = дативная форма с предлогом an (an der Wand).",
+        "de": "Wo hängt das Poster? Position auf einer Fläche braucht an + Dativ.",
+        "en": "Where does the poster hang? On a surface requires an + dative."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Der Ball liegt ___ dem Sofa. (Hinweis: Position)",
+      "accepted": [
+        "unter"
+      ],
+      "explanation": {
+        "ru": "Где лежит мяч? Под софой = дативная форма (unter dem Sofa).",
+        "de": "Wo liegt der Ball? Position braucht Dativ (unter dem Sofa).",
+        "en": "Where is the ball lying? Position requires dative (unter dem Sofa)."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den korrekten Satz:",
+      "options": [
+        "Ich setze mich auf den Stuhl.",
+        "Ich setze mich auf dem Stuhl.",
+        "Ich setze mich auf das Stuhl."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Куда я сажусь? Движение = аккузатив (auf + den).",
+        "de": "Wohin setze ich mich? Bewegung braucht Akkusativ (auf den Stuhl).",
+        "en": "Where am I sitting down? Movement requires accusative (auf den Stuhl)."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Die Lampe hängt über ___ Tisch. (Hinweis: Position, der Tisch)",
+      "accepted": [
+        "dem"
+      ],
+      "explanation": {
+        "ru": "Где висит лампа? Над столом = дативная форма (über dem Tisch).",
+        "de": "Wo hängt die Lampe? Position braucht Dativ (über dem Tisch).",
+        "en": "Where does the lamp hang? Position requires dative (über dem Tisch)."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Die Schüler gehen ___ das Klassenzimmer. (Hinweis: Bewegung, wohin?)",
+      "accepted": [
+        "in"
+      ],
+      "explanation": {
+        "ru": "Куда идут ученики? Движение в здание = аккузатив (in + das).",
+        "de": "Wohin gehen die Schüler? Bewegung braucht Akkusativ (in das Klassenzimmer).",
+        "en": "Where are the students going? Movement into a room requires accusative (in das)."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den korrekten Satz:",
+      "options": [
+        "Das Auto parkt zwischen dem Baum und dem Haus.",
+        "Das Auto parkt zwischen den Baum und das Haus.",
+        "Das Auto parkt zwischen dem Baum und das Haus."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Где припаркована машина? Местоположение = дативная форма для обеих частей.",
+        "de": "Wo parkt das Auto? Position braucht Dativ nach zwischen.",
+        "en": "Where is the car parked? Position requires dative after zwischen."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Ich werfe den Ball über ___ Zaun. (Hinweis: Bewegung, wohin?)",
+      "accepted": [
+        "den"
+      ],
+      "explanation": {
+        "ru": "Куда я бросаю мяч? Через забор = аккузатив (über + den Zaun).",
+        "de": "Wohin werfe ich den Ball? Bewegung braucht Akkusativ (über den Zaun).",
+        "en": "Where am I throwing the ball? Movement over something requires accusative (über den)."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Der Hund sitzt vor ___ Haus. (Hinweis: Position, das Haus)",
+      "accepted": [
+        "dem"
+      ],
+      "explanation": {
+        "ru": "Где сидит собака? Перед домом = дативная форма (vor dem Haus).",
+        "de": "Wo sitzt der Hund? Position braucht Dativ (vor dem Haus).",
+        "en": "Where is the dog sitting? Position in front of something requires dative (vor dem Haus)."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den korrekten Satz:",
+      "options": [
+        "Wir fahren in die Berge.",
+        "Wir fahren in den Bergen.",
+        "Wir fahren in die Berg."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Куда мы едем? Движение в горы = аккузатив (in + die Berge).",
+        "de": "Wohin fahren wir? Bewegung braucht Akkusativ (in die Berge).",
+        "en": "Where are we driving to? Movement to mountains requires accusative (in die Berge)."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Das Buch liegt hinter ___ Tür. (Hinweis: Position)",
+      "accepted": [
+        "der"
+      ],
+      "explanation": {
+        "ru": "Где лежит книга? Позади двери = дативная форма (hinter der Tür).",
+        "de": "Wo liegt das Buch? Position hinter etwas braucht Dativ (hinter der Tür).",
+        "en": "Where is the book lying? Position behind something requires dative (hinter der Tür)."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den korrekten Satz:",
+      "options": [
+        "Der Arzt hängt die Röntgenbilder an die Wand.",
+        "Der Arzt hängt die Röntgenbilder an dem Wand.",
+        "Der Arzt hängt die Röntgenbilder ans Wand."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Куда вешает врач снимки? Движение на поверхность = аккузатив (an + die).",
+        "de": "Wohin hängt der Arzt die Bilder? Bewegung auf eine Oberfläche braucht Akkusativ (an die Wand).",
+        "en": "Where is the doctor hanging the pictures? Movement onto a surface requires accusative (an die Wand)."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Mein Freund arbeitet ___ einem großen Büro. (Hinweis: Position)",
+      "accepted": [
+        "in"
+      ],
+      "explanation": {
+        "ru": "Где работает друг? В офисе = дативная форма (in einem Büro).",
+        "de": "Wo arbeitet mein Freund? Position in einem Raum braucht Dativ (in einem Büro).",
+        "en": "Where does my friend work? Position inside a room requires dative (in einem Büro)."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Die Kinder rennen ___ den Baum. (Hinweis: Bewegung, wohin?)",
+      "accepted": [
+        "um"
+      ],
+      "explanation": {
+        "ru": "Куда бегут дети? Вокруг дерева = аккузатив (um + den Baum).",
+        "de": "Wohin rennen die Kinder? Bewegung um etwas herum braucht Akkusativ (um den Baum).",
+        "en": "Where are the children running? Movement around something requires accusative (um den Baum)."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den korrekten Satz:",
+      "options": [
+        "Der Teller steht neben dem Besteck.",
+        "Der Teller steht neben das Besteck.",
+        "Der Teller steht neben den Besteck."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Где стоит тарелка? Рядом с приборами = дативная форма (neben dem Besteck).",
+        "de": "Wo steht der Teller? Position neben etwas braucht Dativ (neben dem Besteck).",
+        "en": "Where is the plate standing? Position next to something requires dative (neben dem Besteck)."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Die Patientin trägt den Termin ___ die Krankenakte ein. (Hinweis: Bewegung, wohin?)",
+      "accepted": [
+        "in"
+      ],
+      "explanation": {
+        "ru": "Куда вносит запись пациент? В историю болезни = аккузатив (in + die).",
+        "de": "Wohin trägt die Patientin den Termin ein? Bewegung in ein Dokument braucht Akkusativ (in die Krankenakte).",
+        "en": "Into what is the patient entering the appointment? Movement into a document requires accusative (in die Krankenakte)."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Ich stelle die Vase auf ___ Tisch. (Hinweis: Bewegung, wohin?, der)",
+      "accepted": [
+        "den"
+      ],
+      "explanation": {
+        "ru": "Куда ставлю вазу? На стол = аккузатив (auf + den Tisch).",
+        "de": "Wohin stelle ich die Vase? Bewegung auf eine Oberfläche braucht Akkusativ (auf den Tisch).",
+        "en": "Where am I putting the vase? Movement onto a surface requires accusative (auf den Tisch)."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Der Berg erhebt sich über ___ Stadt. (Hinweis: Position, die)",
+      "accepted": [
+        "der"
+      ],
+      "explanation": {
+        "ru": "Где располагается гора? Над городом = дативная форма (über der Stadt).",
+        "de": "Wo erhebt sich der Berg? Position über einer Stadt braucht Dativ (über der Stadt).",
+        "en": "Where does the mountain rise above? Position above something requires dative (über der Stadt)."
+      }
+    }
+  ],
+  "trennbare_verben": [
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Ich aufräume mein Zimmer jeden Tag.",
+        "Ich räume mein Zimmer jeden Tag auf.",
+        "Ich räume auf mein Zimmer jeden Tag."
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "В главном предложении отделяемая приставка стоит в конце предложения.",
+        "de": "Im Hauptsatz steht die trennbare Präfix am Ende des Satzes.",
+        "en": "In a main clause, the separable prefix goes at the end of the sentence."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Ich bin gestern um 22 Uhr ___ . (einschlafen)",
+      "accepted": [
+        "eingeschlafen"
+      ],
+      "explanation": {
+        "ru": "В Partizip II отделяемых глаголов 'ge' стоит между приставкой и основой.",
+        "de": "Im Partizip II von trennbaren Verben steht 'ge' zwischen Präfix und Stamm.",
+        "en": "In the Partizip II of separable verbs, 'ge' goes between the prefix and the stem."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Der Chef ruft mich zu Beginn der Besprechung auf.",
+        "Der Chef aufruft mich zu Beginn der Besprechung.",
+        "Der Chef ruft auf mich zu Beginn der Besprechung."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Отделяемая приставка 'auf' в главном предложении отделяется и стоит в конце.",
+        "de": "Die trennbare Präfix 'auf' wird abgetrennt und steht am Ende.",
+        "en": "The separable prefix 'auf' is separated and placed at the end."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Wir müssen um 6 Uhr früh ___ . (aufwachen)",
+      "accepted": [
+        "aufwachen"
+      ],
+      "explanation": {
+        "ru": "С модальным глаголом отделяемый глагол остаётся целым и стоит в конце инфинитива.",
+        "de": "Mit einem Modalverb bleibt der trennbare Verb zusammen und steht als Infinitiv am Ende.",
+        "en": "With a modal verb, the separable verb stays together as an infinitive at the end."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Ich verstehe nicht, warum er weggeht.",
+        "Ich verstehe nicht, warum er weg geht.",
+        "Ich verstehe nicht, warum er geht weg."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "В придаточном предложении отделяемый глагол остаётся вместе в позиции Partizip II.",
+        "de": "Im Nebensatz bleibt der trennbare Verb zusammen in der Position des Partizips II.",
+        "en": "In a subordinate clause, the separable verb stays together in the Partizip II position."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Hast du die alte Lampe schon ___ ? (wegbringen)",
+      "accepted": [
+        "weggebracht"
+      ],
+      "explanation": {
+        "ru": "Префикс 'weg-' отделяемый, в Partizip II 'ge' встаёт между приставкой и основой.",
+        "de": "Das Präfix 'weg-' ist trennbar, im Partizip II steht 'ge' zwischen Präfix und Stamm.",
+        "en": "The prefix 'weg-' is separable; in Partizip II, 'ge' goes between the prefix and stem."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Mein Freund lädt mich nächste Woche zu einer Party ein.",
+        "Mein Freund ein lädt mich nächste Woche zu einer Party.",
+        "Mein Freund lädt ein mich nächste Woche zu einer Party."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "В главном предложении отделяемая приставка 'ein-' отделяется и стоит в конце.",
+        "de": "Im Hauptsatz wird die trennbare Präfix 'ein-' abgetrennt und steht am Ende.",
+        "en": "In the main clause, the separable prefix 'ein-' is separated and placed at the end."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Ich kann die Tür nicht aufmachen, der Schlüssel ist weg.",
+        "Ich kann die Tür nicht auf machen, der Schlüssel ist weg.",
+        "Ich kann die Tür nicht make auf, der Schlüssel ist weg."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "С модальным глаголом отделяемый глагол 'aufmachen' остаётся целым инфинитивом в конце.",
+        "de": "Mit einem Modalverb bleibt 'aufmachen' als ganzer Infinitiv am Ende zusammen.",
+        "en": "With a modal verb, 'aufmachen' stays together as a complete infinitive at the end."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Sie hat gestern die neuen Möbel ___ . (mitbringen)",
+      "accepted": [
+        "mitgebracht"
+      ],
+      "explanation": {
+        "ru": "В Partizip II отделяемого глагола 'mitbringen' 'ge' встаёт между приставкой и основой.",
+        "de": "Im Partizip II von 'mitbringen' steht 'ge' zwischen 'mit-' und 'bracht'.",
+        "en": "In the Partizip II of 'mitbringen', 'ge' is placed between the prefix and the stem."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Wir nehmen die Koffer mit, wenn wir morgen abreisen.",
+        "Wir nehmen die Koffer mit, wenn wir morgen ab reisen.",
+        "Wir nehmen die Koffer mit, wenn wir morgen reisen ab."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "В придаточном предложении отделяемый глагол 'abreisen' остаётся вместе в конце.",
+        "de": "Im Nebensatz bleibt der trennbare Verb 'abreisen' zusammen am Ende.",
+        "en": "In a subordinate clause, the separable verb 'abreisen' stays together at the end."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Der Patient muss morgen ins Krankenhaus ___ . (aufnehmen)",
+      "accepted": [
+        "aufgenommen werden"
+      ],
+      "explanation": {
+        "ru": "С модальным глаголом в пассивной конструкции отделяемый глагол остаётся целым.",
+        "de": "Mit einem Modalverb im Passiv bleibt der trennbare Verb zusammen.",
+        "en": "With a modal verb in passive voice, the separable verb stays together."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Bitte schreib deinen Namen oben ___ ! (aufschreiben)",
+      "accepted": [
+        "auf"
+      ],
+      "explanation": {
+        "ru": "В повелительном наклонении главного предложения отделяемая приставка стоит в конце.",
+        "de": "Im Imperativ des Hauptsatzes steht die trennbare Präfix am Ende.",
+        "en": "In the imperative of a main clause, the separable prefix goes at the end."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Der Bus kommt um 15 Uhr an.",
+        "Der Bus ankommt um 15 Uhr.",
+        "Der Bus kommt an um 15 Uhr."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Отделяемая приставка 'an-' в главном предложении стоит в конце после спрягаемого глагола.",
+        "de": "Die trennbare Präfix 'an-' im Hauptsatz steht am Ende nach dem konjugierten Verb.",
+        "en": "The separable prefix 'an-' in the main clause goes at the end after the conjugated verb."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Ich weiß nicht, wann die Gäste eintreffen werden.",
+        "Ich weiß nicht, wann die Gäste ein treffen werden.",
+        "Ich weiß nicht, wann die Gäste treffen ein werden."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "В придаточном предложении отделяемый глагол 'eintreffen' остаётся вместе перед модальным глаголом.",
+        "de": "Im Nebensatz bleibt der trennbare Verb 'eintreffen' zusammen vor dem Modalverb.",
+        "en": "In a subordinate clause, the separable verb 'eintreffen' stays together before the modal verb."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Können wir die Besprechung um eine Stunde ___? (verschieben)",
+      "accepted": [
+        "verschieben"
+      ],
+      "explanation": {
+        "ru": "Глагол 'verschieben' имеет неотделяемую приставку 'ver-', остаётся целым с модальным глаголом.",
+        "de": "Das Verb 'verschieben' hat die untrennbare Präfix 'ver-' und bleibt mit Modalverb zusammen.",
+        "en": "The verb 'verschieben' has the inseparable prefix 'ver-' and stays together with the modal."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Sie ist um 8 Uhr aufgestanden und hat geduscht.",
+        "Sie ist um 8 Uhr auf gestanden und hat geduscht.",
+        "Sie ist auf um 8 Uhr gestanden und hat geduscht."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "В Partizip II отделяемого глагола 'aufstehen' префикс и основа пишутся вместе: aufgestanden.",
+        "de": "Im Partizip II von 'aufstehen' werden Präfix und Stamm zusammen geschrieben: aufgestanden.",
+        "en": "In the Partizip II of 'aufstehen', the prefix and stem are written together: aufgestanden."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Ich bin erstaunt, dass er zurückkommt, obwohl er gekündigt hat.",
+        "Ich bin erstaunt, dass er zurück kommt, obwohl er gekündigt hat.",
+        "Ich bin erstaunt, dass er kommt zurück, obwohl er gekündigt hat."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "В придаточном предложении отделяемый глагол 'zurückkommen' остаётся целым в позиции Präsens.",
+        "de": "Im Nebensatz bleibt der trennbare Verb 'zurückkommen' zusammen in der Präsensform.",
+        "en": "In a subordinate clause, the separable verb 'zurückkommen' stays together in the present form."
+      }
+    }
+  ],
+  "konjunktiv2": [
+    {
+      "type": "mc",
+      "prompt": "Welcher Satz ist die höflichste Bitte?",
+      "options": [
+        "Geben Sie mir sofort das Dokument!",
+        "Würden Sie mir bitte das Dokument geben?",
+        "Du musst mir das Dokument geben."
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Коньюнктив II (würden) выражает вежливую просьбу, а не приказ.",
+        "de": "Konjunktiv II (würden) drückt höfliche Bitte aus, nicht Befehl.",
+        "en": "Conditional II (würden) expresses a polite request, not a command."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "___ Sie mir bitte die Speisekarte zeigen? (können, höflich)",
+      "accepted": [
+        "Könnten"
+      ],
+      "explanation": {
+        "ru": "Können → конте́ (Präteritum konnte + Umlaut o→ö).",
+        "de": "können → konnte → könnte (Präteritum mit Umlaut).",
+        "en": "können → könnte (preterite with umlaut: konnte → könnte)."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Ich ___ gern einen Tisch für vier Personen reservieren.",
+      "options": [
+        "will",
+        "würde",
+        "werde"
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Würde + Infinitiv — стандартный способ выразить вежливое пожелание.",
+        "de": "würde + Infinitiv ist die Standard-Höflichkeitsform für Wünsche.",
+        "en": "würde + infinitive is the standard polite form for wishes."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Wäre es möglich, die Rechnung bis Freitag zu ___ ? (verb: erhalten)",
+      "accepted": [
+        "erhalten"
+      ],
+      "explanation": {
+        "ru": "После würde/wäre глагол идёт в инфинитив (Infinitiv).",
+        "de": "Nach Konjunktiv II kommt der Infinitiv des Verbs.",
+        "en": "After conditional II comes the infinitive of the verb."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "An deiner Stelle ___ ich das Jobangebot annehmen. (werden, Konjunktiv II)",
+      "accepted": [
+        "würde"
+      ],
+      "explanation": {
+        "ru": "Würde для всех глаголов, кроме пяти основных, используется с инфинитивом.",
+        "de": "würde ist die Konjunktiv-II-Form für alle anderen Verben (außer sein, haben, können, mögen).",
+        "en": "würde is the conditional II for all other verbs (except sein, haben, können, mögen)."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Könnten Sie mir bitte … ?",
+      "options": [
+        "das Zimmer zeigen",
+        "zeigen das Zimmer",
+        "das Zimmer zu zeigen"
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "После модального глагола (können) идёт инфинитив без zu.",
+        "de": "Nach Modalverben (können) folgt der Infinitiv ohne zu.",
+        "en": "After modal verbs (können) comes the infinitive without zu."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "___ du mir die Adresse aufschreiben? (können, du-Form, höflich)",
+      "accepted": [
+        "Könntest"
+      ],
+      "explanation": {
+        "ru": "Könntest — это Коньюнктив II, du-форма от können.",
+        "de": "könntest ist Konjunktiv II, du-Form von können.",
+        "en": "könntest is conditional II, du-form of können."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wenn ich mehr Geld hätte, ___ ich eine Reise machen.",
+      "options": [
+        "würde",
+        "werde",
+        "will"
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Условное предложение (wenn-Satz) требует Коньюнктив II в обеих частях.",
+        "de": "Im Konditionalsatz (wenn …) steht Konjunktiv II in beiden Teilen.",
+        "en": "In a conditional sentence (wenn …) conditional II stands in both clauses."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Welche Aussage ist FALSCH?",
+      "options": [
+        "Hätte ich gern einen Kaffee = höfliche Bitte",
+        "Würdest du mir helfen? = höfliche Frage",
+        "Ich will das Buch lesen = höfliche Bitte"
+      ],
+      "answer": 2,
+      "explanation": {
+        "ru": "Will — это не Коньюнктив II, звучит как приказ, а не вежливая просьба.",
+        "de": "will ist kein Konjunktiv II und klingt wie Befehl, nicht höfliche Bitte.",
+        "en": "will is not conditional II and sounds like a command, not a polite request."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Ich ___ den Vertrag gern noch einmal durchsehen. (werden, Konjunktiv II)",
+      "accepted": [
+        "würde"
+      ],
+      "explanation": {
+        "ru": "Würde + Infinitiv — стандартная форма Коньюнктива II для всех остальных глаголов.",
+        "de": "würde + Infinitiv ist Standard-Konjunktiv II für alle anderen Verben.",
+        "en": "würde + infinitive is standard conditional II for all other verbs."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wenn ich du ___, ___ ich sofort zum Arzt gehen.",
+      "options": [
+        "wäre / würde",
+        "bin / gehe",
+        "wäre / gehe"
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Условное предложение: если бы я был — я бы пошёл (оба Коньюнктив II).",
+        "de": "Konditionalsatz: wenn-Teil und dann-Teil brauchen beide Konjunktiv II.",
+        "en": "Conditional sentence: both wenn-clause and main clause need conditional II."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "___ Sie mir bitte helfen, den Weg zu finden? (können, höflich)",
+      "accepted": [
+        "Könnten"
+      ],
+      "explanation": {
+        "ru": "Könnten — Коньюнктив II (множественное/вежливое Вы) от können.",
+        "de": "Könnten ist Konjunktiv II (Sie) von können.",
+        "en": "Könnten is conditional II (Sie) of können."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Ich ___ noch gern einen Espresso.",
+      "options": [
+        "möchte",
+        "will",
+        "wünsche"
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Möchte — стандартная вежливая форма для выражения желания в кафе.",
+        "de": "möchte ist die Standard-Höflichkeitsform für Wünsche im Restaurant.",
+        "en": "möchte is the standard polite form for wishes in a restaurant."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "An deiner Stelle ___ ich dieses Jobangebot ablehnen. (werden, Konjunktiv II)",
+      "accepted": [
+        "würde"
+      ],
+      "explanation": {
+        "ru": "Würде + Infinitiv для всех глаголов, кроме пяти основных.",
+        "de": "würde + Infinitiv für alle Verben außer sein, haben, können, mögen.",
+        "en": "würde + infinitive for all verbs except sein, haben, können, mögen."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Welcher Satz ist am höflichsten in einer E-Mail an einen Chef?",
+      "options": [
+        "Ich will einen Tag Urlaub nehmen.",
+        "Ich würde gern einen Tag Urlaub nehmen.",
+        "Geben Sie mir einen Tag Urlaub!"
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Würде + gern звучит всегда вежливо в деловой переписке.",
+        "de": "würde + gern ist die höflichste Form in formeller E-Mail.",
+        "en": "würde + gern is the most polite form in a formal email."
+      }
+    }
+  ],
+  "relativsaetze": [
+    {
+      "type": "gap",
+      "prompt": "Der Arzt, ___ mich untersucht hat, hat eine Praxis in der Nähe. (Hinweis: Nominativ/Maskulinum)",
+      "accepted": [
+        "der"
+      ],
+      "explanation": {
+        "ru": "Глагол 'untersuchen' в перфекте требует аккузатива, но в главной части 'der Arzt' - номинатив (подлежащее). Нужно определить кейс из глагола: hat untersucht → Akkusativ, но как подлежащее: Nominativ (der)",
+        "de": "Das Verb 'untersuchen' verlangt hier Akkusativ, aber das Subjekt bleibt im Nominativ. Der Relativsatz braucht das Nominativ-Pronomen für das Subjekt.",
+        "en": "The relative pronoun is the subject of the relative clause, so it stays in nominative despite the main clause."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Das Geschenk, das ich bekommen habe, ist sehr schön.",
+        "Das Geschenk, den ich bekommen habe, ist sehr schön.",
+        "Das Geschenk, dem ich bekommen habe, ist sehr schön."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Глагол 'bekommen' требует аккузатива. Существительное 'Geschenk' среднего рода, аккузатив среднего рода = 'das'.",
+        "de": "Das Verb 'bekommen' regiert den Akkusativ. Nominativ und Akkusativ sind bei Neutrum identisch: das.",
+        "en": "The verb 'receive' takes the accusative. Nominative and accusative are the same for neuter: das."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Der Kurs, an ___ ich teilnehme, beginnt nächste Woche. (Präposition + Dativ)",
+      "accepted": [
+        "dem"
+      ],
+      "explanation": {
+        "ru": "Предлог 'an' с дативом требует 'dem'. Существительное 'Kurs' мужского рода, дативный падеж мужского рода = 'dem'.",
+        "de": "Die Präposition 'an' steht mit Dativ. Das Relativpronomen für Maskulinum im Dativ ist 'dem'.",
+        "en": "The preposition 'an' requires the dative. The relative pronoun for masculine dative is 'dem'."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Die Freunde, ___ ich eingeladen habe, kommen um 19 Uhr.",
+      "options": [
+        "die",
+        "dem",
+        "denen"
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Глагол 'einladen' требует аккузатива. Множественное число аккузатива = 'die'.",
+        "de": "Das Verb 'einladen' verlangt den Akkusativ. Plural Akkusativ = die.",
+        "en": "The verb 'invite' takes the accusative. Plural accusative = die."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Der Zahnarzt, zu ___ ich gehe, ist sehr kompetent. (Präposition + Dativ)",
+      "accepted": [
+        "dem"
+      ],
+      "explanation": {
+        "ru": "Предлог 'zu' требует дативного падежа. Существительное 'Zahnarzt' мужского рода, дативный падеж мужского рода = 'dem'.",
+        "de": "Die Präposition 'zu' regiert den Dativ. Maskulinum Dativ = dem.",
+        "en": "The preposition 'to' requires the dative. Masculine dative = dem."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Die Bücher, von ___ ich träume, sind in der Bibliothek. (Präposition + Dativ)",
+      "accepted": [
+        "denen"
+      ],
+      "explanation": {
+        "ru": "Предлог 'von' требует дативного падежа. Множественное число дативного падежа = 'denen'.",
+        "de": "Die Präposition 'von' steht mit Dativ. Plural Dativ = denen.",
+        "en": "The preposition 'of' requires the dative. Plural dative = denen."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Die Lehrerin, der ich danke, ist sehr hilfsbereit.",
+        "Die Lehrerin, die ich danke, ist sehr hilfsbereit.",
+        "Die Lehrerin, den ich danke, ist sehr hilfsbereit."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Глагол 'danken' требует дативного падежа. Существительное 'Lehrerin' женского рода, дативный падеж женского рода = 'der'.",
+        "de": "Das Verb 'danken' verlangt Dativ. Femininum Dativ = der.",
+        "en": "The verb 'thank' takes the dative. Feminine dative = der."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Der Film, ___ mir gefallen hat, war sehr lustig. (Nominativ)",
+      "accepted": [
+        "der"
+      ],
+      "explanation": {
+        "ru": "Глагол 'gefallen' требует дативного падежа для лица (mir), но существительное 'Film' - подлежащее, остается в номинативе. Мужской род номинатив = 'der'.",
+        "de": "Das Relativpronomen ist hier das Subjekt des Nebensatzes. Maskulinum Nominativ = der.",
+        "en": "The relative pronoun is the subject of the relative clause, so it remains nominative: der."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Die Tasche, ___ ich seit Jahren habe, ist noch in gutem Zustand.",
+      "options": [
+        "die",
+        "den",
+        "dem"
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Глагол 'haben' требует аккузатива для прямого дополнения. Существительное 'Tasche' женского рода, аккузатив женского рода совпадает с номинативом: 'die'.",
+        "de": "Das Verb 'haben' regiert den Akkusativ. Femininum Akkusativ = die.",
+        "en": "The verb 'have' takes the accusative. Feminine accusative = die."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Der Mann, auf ___ ich warte, kommt gleich. (Präposition + Akkusativ)",
+      "accepted": [
+        "den"
+      ],
+      "explanation": {
+        "ru": "Предлог 'auf' с аккузативом. Существительное 'Mann' мужского рода, аккузатив мужского рода = 'den'.",
+        "de": "Die Präposition 'auf' mit Akkusativ. Maskulinum Akkusativ = den.",
+        "en": "The preposition 'auf' requires accusative. Masculine accusative = den."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Die Studentin, bei der ich wohne, studiert Biologie.",
+        "Die Studentin, bei den ich wohne, studiert Biologie.",
+        "Die Studentin, bei dem ich wohne, studiert Biologie."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Предлог 'bei' требует дативного падежа. Существительное 'Studentin' женского рода, дативный падеж женского рода = 'der'.",
+        "de": "Die Präposition 'bei' regiert den Dativ. Femininum Dativ = der.",
+        "en": "The preposition 'at/with' requires the dative. Feminine dative = der."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Die Personen, ___ ich mich anvertraut habe, sind sehr zuverlässig. (Dativ, Plural)",
+      "accepted": [
+        "denen"
+      ],
+      "explanation": {
+        "ru": "Глагол 'sich anvertrauen' требует дативного падежа. Множественное число дативного падежа = 'denen'.",
+        "de": "Das Verb 'sich anvertrauen' verlangt Dativ. Plural Dativ = denen.",
+        "en": "The verb 'confide in' takes the dative. Plural dative = denen."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Der Polizist, ___ ich um Hilfe gebeten habe, war sehr freundlich. (Akkusativ)",
+      "accepted": [
+        "den"
+      ],
+      "explanation": {
+        "ru": "Глагол 'bitten' с аккузативом требует аккузатива. Существительное 'Polizist' мужского рода, аккузатив мужского рода = 'den'.",
+        "de": "Das Verb 'bitten um' regiert den Akkusativ. Maskulinum Akkusativ = den.",
+        "en": "The verb 'ask for' takes the accusative. Masculine accusative = den."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Die Schüler, denen der Unterricht hilft, sind sehr engagiert.",
+        "Die Schüler, den der Unterricht hilft, sind sehr engagiert.",
+        "Die Schüler, die der Unterricht hilft, sind sehr engagiert."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Глагол 'helfen' требует дативного падежа. Множественное число дативного падежа = 'denen'.",
+        "de": "Das Verb 'helfen' verlangt Dativ. Plural Dativ = denen.",
+        "en": "The verb 'help' takes the dative. Plural dative = denen."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Der Grund, ___ ich zustimme, ist überzeugend. (Präposition + Dativ)",
+      "accepted": [
+        "dem"
+      ],
+      "explanation": {
+        "ru": "Предлог 'zu' (в составе 'zustimmen') требует дативного падежа. Существительное 'Grund' мужского рода, дативный падеж мужского рода = 'dem'.",
+        "de": "Das Verb 'zustimmen' regiert den Dativ. Maskulinum Dativ = dem.",
+        "en": "The verb 'agree to' takes the dative. Masculine dative = dem."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Die Maschine, ___ wir repariert haben, funktioniert wieder.",
+      "options": [
+        "der",
+        "die",
+        "denen"
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Глагол 'reparieren' требует аккузатива. Существительное 'Maschine' женского рода, аккузатив женского рода совпадает с номинативом: 'die'.",
+        "de": "Das Verb 'reparieren' verlangt Akkusativ. Femininum Akkusativ = die.",
+        "en": "The verb 'repair' takes the accusative. Feminine accusative = die."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Die Menschen, für ___ ich arbeite, sind sehr nett. (Präposition + Akkusativ, Plural)",
+      "accepted": [
+        "die"
+      ],
+      "explanation": {
+        "ru": "Предлог 'für' требует аккузатива. Множественное число аккузатива = 'die'.",
+        "de": "Die Präposition 'für' regiert den Akkusativ. Plural Akkusativ = die.",
+        "en": "The preposition 'for' requires the accusative. Plural accusative = die."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wähle den richtigen Satz:",
+      "options": [
+        "Der Verwandte, mit dem ich über alles spreche, lebt in Berlin.",
+        "Der Verwandte, mit den ich über alles spreche, lebt in Berlin.",
+        "Der Verwandte, mit die ich über alles spreche, lebt in Berlin."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Предлог 'mit' требует дативного падежа. Существительное 'Verwandte' мужского рода, дативный падеж мужского рода = 'dem'.",
+        "de": "Die Präposition 'mit' verlangt Dativ. Maskulinum Dativ = dem.",
+        "en": "The preposition 'with' requires the dative. Masculine dative = dem."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Die Aufgabe, ___ ich lösen musste, war schwierig. (Akkusativ)",
+      "accepted": [
+        "die"
+      ],
+      "explanation": {
+        "ru": "Глагол 'lösen' требует аккузатива. Существительное 'Aufgabe' женского рода, аккузатив женского рода совпадает с номинативом: 'die'.",
+        "de": "Das Verb 'lösen' regiert den Akkusativ. Femininum Akkusativ = die.",
+        "en": "The verb 'solve' takes the accusative. Feminine accusative = die."
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Die Lebensmittel, ___ ich einkaufen soll, sind im Supermarkt.",
+      "options": [
+        "den",
+        "denen",
+        "die"
+      ],
+      "answer": 2,
+      "explanation": {
+        "ru": "Глагол 'einkaufen' требует аккузатива. Множественное число аккузатива = 'die'.",
+        "de": "Das Verb 'einkaufen' verlangt Akkusativ. Plural Akkusativ = die.",
+        "en": "The verb 'buy/shop for' takes the accusative. Plural accusative = die."
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Die Nachbarin, von ___ ich lerne, ist Deutschlehrerin. (Präposition + Dativ)",
+      "accepted": [
+        "der"
+      ],
+      "explanation": {
+        "ru": "Предлог 'von' требует дативного падежа. Существительное 'Nachbarin' женского рода, дативный падеж женского рода = 'der'.",
+        "de": "Die Präposition 'von' regiert den Dativ. Femininum Dativ = der.",
+        "en": "The preposition 'from' requires the dative. Feminine dative = der."
+      }
+    }
+  ],
+  "adjektivdeklination": [
+    {
+      "type": "mc",
+      "prompt": "Der Arzt hat mir einen ___ Tee empfohlen.",
+      "options": [
+        "warme",
+        "warmen",
+        "warmer"
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "После ein в аккузативе мужского рода прилагательное принимает окончание -en",
+        "de": "Nach 'ein' im Akkusativ Maskulinum bekommt das Adjektiv die Endung -en",
+        "en": "After 'ein' in accusative masculine, the adjective takes the ending -en"
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Die ___ Kollegin sitzt neben mir im Büro. (sympathisch)",
+      "accepted": [
+        "sympathische"
+      ],
+      "explanation": {
+        "ru": "После определённого артикля die в номинативе прилагательное получает окончание -e",
+        "de": "Nach dem Artikel 'die' im Nominativ bekommt das Adjektiv die Endung -e",
+        "en": "After the article 'die' in nominative, the adjective takes the ending -e"
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Ich treffe mich gern mit meinen ___ Freunden.",
+      "options": [
+        "alten",
+        "alte",
+        "alter"
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "После определённого артикля meinen в дативе множественного числа прилагательное получает окончание -en",
+        "de": "Nach 'meinen' im Dativ Plural bekommt das Adjektiv die Endung -en",
+        "en": "After 'meinen' in dative plural, the adjective takes the ending -en"
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Ohne ___ Reservierung können Sie nicht ins Restaurant. (gültig)",
+      "accepted": [
+        "gültige"
+      ],
+      "explanation": {
+        "ru": "Без артикля в женском роде аккузатив прилагательное принимает окончание -e",
+        "de": "Ohne Artikel im Akkusativ Femininum bekommt das Adjektiv die Endung -e",
+        "en": "Without an article in accusative feminine, the adjective takes the ending -e"
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Wir haben das ___ Haus gefunden.",
+      "options": [
+        "perfekt",
+        "perfekte",
+        "perfekten"
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "После определённого артикля das в аккузативе среднего рода прилагательное получает окончание -e",
+        "de": "Nach dem Artikel 'das' im Akkusativ Neutrum bekommt das Adjektiv die Endung -e",
+        "en": "After the article 'das' in accusative neuter, the adjective takes the ending -e"
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Mit dem ___ Auto kommen wir schneller an. (neu)",
+      "accepted": [
+        "neuen"
+      ],
+      "explanation": {
+        "ru": "После определённого артикля dem в дативе прилагательное получает окончание -en",
+        "de": "Nach 'dem' im Dativ bekommt das Adjektiv die Endung -en",
+        "en": "After 'dem' in dative, the adjective takes the ending -en"
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Meine ___ Schwester studiert Medizin.",
+      "options": [
+        "jüngere",
+        "jüngeren",
+        "jünger"
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "После притяжательного местоимения meine в номинативе женского рода прилагательное получает окончание -e",
+        "de": "Nach 'meine' im Nominativ Femininum bekommt das Adjektiv die Endung -e",
+        "en": "After 'meine' in nominative feminine, the adjective takes the ending -e"
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Er arbeitet in einem ___ Unternehmen. (groß)",
+      "accepted": [
+        "großen"
+      ],
+      "explanation": {
+        "ru": "После неопределённого артикля einem в дативе среднего рода прилагательное получает окончание -en",
+        "de": "Nach 'einem' im Dativ Neutrum bekommt das Adjektiv die Endung -en",
+        "en": "After 'einem' in dative neuter, the adjective takes the ending -en"
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Trotz ___ Schmerzen bin ich zur Arbeit gegangen. (stark)",
+      "accepted": [
+        "starker"
+      ],
+      "explanation": {
+        "ru": "После определённого артикля der в дативе женского рода прилагательное получает окончание -en",
+        "de": "Nach 'der' im Dativ Femininum bekommt das Adjektiv die Endung -en",
+        "en": "After 'der' in dative feminine, the adjective takes the ending -en"
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Ein ___ Kind braucht viel Aufmerksamkeit.",
+      "options": [
+        "kleines",
+        "kleine",
+        "kleinen"
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "После неопределённого артикля ein в номинативе среднего рода прилагательное получает окончание -es",
+        "de": "Nach 'ein' im Nominativ Neutrum bekommt das Adjektiv die Endung -es",
+        "en": "After 'ein' in nominative neuter, the adjective takes the ending -es"
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Ich kaufe ___ Obst auf dem Markt. (frisch)",
+      "accepted": [
+        "frisches"
+      ],
+      "explanation": {
+        "ru": "Без артикля в среднем роде аккузатив прилагательное принимает окончание -es",
+        "de": "Ohne Artikel im Akkusativ Neutrum bekommt das Adjektiv die Endung -es",
+        "en": "Without an article in accusative neuter, the adjective takes the ending -es"
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Mein ___ Sohn möchte Fußball spielen. (klein)",
+      "accepted": [
+        "kleiner"
+      ],
+      "explanation": {
+        "ru": "После притяжательного местоимения mein в номинативе мужского рода прилагательное получает окончание -er",
+        "de": "Nach 'mein' im Nominativ Maskulinum bekommt das Adjektiv die Endung -er",
+        "en": "After 'mein' in nominative masculine, the adjective takes the ending -er"
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Sie braucht einen ___ Job für die Zukunft.",
+      "options": [
+        "stabileren",
+        "stabile",
+        "stabiler"
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "После неопределённого артикля einen в аккузативе мужского рода прилагательное получает окончание -en",
+        "de": "Nach 'einen' im Akkusativ Maskulinum bekommt das Adjektiv die Endung -en",
+        "en": "After 'einen' in accusative masculine, the adjective takes the ending -en"
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Kein ___ Film interessiert ihn.",
+      "options": [
+        "neuere",
+        "neuer",
+        "neue"
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "После неопределённого артикля kein в номинативе мужского рода прилагательное получает окончание -er",
+        "de": "Nach 'kein' im Nominativ Maskulinum bekommt das Adjektiv die Endung -er",
+        "en": "After 'kein' in nominative masculine, the adjective takes the ending -er"
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Wir fahren mit meiner ___ Familie in den Urlaub. (groß)",
+      "accepted": [
+        "großen"
+      ],
+      "explanation": {
+        "ru": "После притяжательного местоимения meiner в дативе женского рода прилагательное получает окончание -en",
+        "de": "Nach 'meiner' im Dativ Femininum bekommt das Adjektiv die Endung -en",
+        "en": "After 'meiner' in dative feminine, the adjective takes the ending -en"
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Das ist eine ___ Entscheidung.",
+      "options": [
+        "richtige",
+        "richtigen",
+        "richtiger"
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "После неопределённого артикля eine в номинативе женского рода прилагательное получает окончание -e",
+        "de": "Nach 'eine' im Nominativ Femininum bekommt das Adjektiv die Endung -e",
+        "en": "After 'eine' in nominative feminine, the adjective takes the ending -e"
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Ohne ___ Grund verlässt er sein Haus nicht. (triftig)",
+      "accepted": [
+        "triftigen"
+      ],
+      "explanation": {
+        "ru": "Без артикля в мужском роде аккузатив прилагательное принимает окончание -en",
+        "de": "Ohne Artikel im Akkusativ Maskulinum bekommt das Adjektiv die Endung -en",
+        "en": "Without an article in accusative masculine, the adjective takes the ending -en"
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "In der ___ Wohnung ist ein Balkon.",
+      "options": [
+        "neuem",
+        "neue",
+        "neuen"
+      ],
+      "answer": 2,
+      "explanation": {
+        "ru": "После определённого артикля der в дативе женского рода прилагательное получает окончание -en",
+        "de": "Nach 'der' im Dativ Femininum bekommt das Adjektiv die Endung -en",
+        "en": "After 'der' in dative feminine, the adjective takes the ending -en"
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Meine ___ Noten sind besser geworden. (letzt)",
+      "accepted": [
+        "letzten"
+      ],
+      "explanation": {
+        "ru": "После притяжательного местоимения meine в аккузативе множественного числа прилагательное получает окончание -en",
+        "de": "Nach 'meine' im Akkusativ Plural bekommt das Adjektiv die Endung -en",
+        "en": "After 'meine' in accusative plural, the adjective takes the ending -en"
+      }
+    }
+  ],
+  "passiv": [
+    {
+      "type": "mc",
+      "prompt": "Der Bericht ___ von der Chefin überprüft.",
+      "options": [
+        "wird",
+        "ist",
+        "hat"
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Präsens Passiv: wird + Partizip II для описания действия",
+        "de": "Präsens Passiv: wird + Partizip II beschreibt die Handlung",
+        "en": "Present Passive: wird + past participle describes the action"
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Das Paket ___ gestern von der Post geliefert. (werden, Präteritum)",
+      "accepted": [
+        "wurde"
+      ],
+      "explanation": {
+        "ru": "Präteritum Passiv: wurde + Partizip II для прошедшего действия",
+        "de": "Präteritum Passiv: wurde + Partizip II für vergangene Handlung",
+        "en": "Past Passive: wurde + past participle for past action"
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Welcher Satz ist Passiv?",
+      "options": [
+        "Der Arzt untersucht den Patienten.",
+        "Der Patient wird vom Arzt untersucht.",
+        "Der Arzt hat den Patienten untersucht."
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Только второй вариант - Passiv (werden + Partizip II)",
+        "de": "Nur der zweite Satz ist Passiv (werden + Partizip II)",
+        "en": "Only the second sentence is passive (werden + past participle)"
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Die Fenster ___ jeden Monat gereinigt. (werden, Präsens)",
+      "accepted": [
+        "werden"
+      ],
+      "explanation": {
+        "ru": "Präsens Passiv множественное число: werden + Partizip II",
+        "de": "Präsens Passiv Plural: werden + Partizip II",
+        "en": "Present Passive plural: werden + past participle"
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Das Essen ___ um 18 Uhr serviert.",
+      "options": [
+        "wird",
+        "werden",
+        "ist"
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Единственное число: wird + Partizip II",
+        "de": "Singular: wird + Partizip II",
+        "en": "Singular: wird + past participle"
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Die Briefe ___ letzte Woche geschrieben. (werden, Präteritum)",
+      "accepted": [
+        "wurden"
+      ],
+      "explanation": {
+        "ru": "Präteritum Passiv множественное число: wurden + Partizip II",
+        "de": "Präteritum Passiv Plural: wurden + Partizip II",
+        "en": "Past Passive plural: wurden + past participle"
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Der Vertrag ___ von beiden Parteien unterzeichnet. (werden, Präsens)",
+      "accepted": [
+        "wird"
+      ],
+      "explanation": {
+        "ru": "Präsens Passiv единственное число: wird + Partizip II",
+        "de": "Präsens Passiv Singular: wird + Partizip II",
+        "en": "Present Passive singular: wird + past participle"
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Die Maschine ___ 2015 installiert.",
+      "options": [
+        "wird",
+        "wurde",
+        "ist"
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Präteritum Passiv: wurde + Partizip II для прошедшего события",
+        "de": "Präteritum Passiv: wurde + Partizip II für vergangenes Ereignis",
+        "en": "Past Passive: wurde + past participle for past event"
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Die Tür ___ jeden Abend abgeschlossen. (werden, Präsens)",
+      "accepted": [
+        "wird"
+      ],
+      "explanation": {
+        "ru": "Präsens Passiv единственное число: wird + Partizip II",
+        "de": "Präsens Passiv Singular: wird + Partizip II",
+        "en": "Present Passive singular: wird + past participle"
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Umformung ins Passiv: Man verkauft die Autos schnell.",
+      "options": [
+        "Die Autos werden schnell verkauft.",
+        "Die Autos sind schnell verkauft.",
+        "Die Autos werden schnell verkaufen."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Объект становится подлежащим, глагол - werden + Partizip II",
+        "de": "Das Objekt wird zum Subjekt, Verb wird zu werden + Partizip II",
+        "en": "Object becomes subject, verb becomes werden + past participle"
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Die Rechnungen ___ im Januar bezahlt. (werden, Präteritum)",
+      "accepted": [
+        "wurden"
+      ],
+      "explanation": {
+        "ru": "Präteritum Passiv множественное число: wurden + Partizip II",
+        "de": "Präteritum Passiv Plural: wurden + Partizip II",
+        "en": "Past Passive plural: wurden + past participle"
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Das Konzert ___ von 5000 Menschen besucht.",
+      "options": [
+        "wird",
+        "werden",
+        "ist"
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Единственное число (das Konzert): wird + Partizip II",
+        "de": "Singular (das Konzert): wird + Partizip II",
+        "en": "Singular (das Konzert): wird + past participle"
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Die Medikamente ___ dreimal täglich genommen. (werden, Präsens)",
+      "accepted": [
+        "werden"
+      ],
+      "explanation": {
+        "ru": "Präsens Passiv множественное число: werden + Partizip II",
+        "de": "Präsens Passiv Plural: werden + Partizip II",
+        "en": "Present Passive plural: werden + past participle"
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Welcher Satz ist Passiv Präteritum?",
+      "options": [
+        "Das Buch wird gelesen.",
+        "Das Buch wurde gelesen.",
+        "Das Buch ist gelesen."
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Präteritum Passiv: wurde + Partizip II",
+        "de": "Präteritum Passiv: wurde + Partizip II",
+        "en": "Past Passive: wurde + past participle"
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Der Garten ___ im Frühling umgestaltet. (werden, Präteritum)",
+      "accepted": [
+        "wurde"
+      ],
+      "explanation": {
+        "ru": "Präteritum Passiv единственное число: wurde + Partizip II",
+        "de": "Präteritum Passiv Singular: wurde + Partizip II",
+        "en": "Past Passive singular: wurde + past participle"
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Die Fragen ___ von allen Schülern beantwortet.",
+      "options": [
+        "wird",
+        "werden",
+        "ist"
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Множественное число (die Fragen): werden + Partizip II",
+        "de": "Plural (die Fragen): werden + Partizip II",
+        "en": "Plural (die Fragen): werden + past participle"
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Das Dach ___ vor zwei Jahren repariert. (werden, Präteritum)",
+      "accepted": [
+        "wurde"
+      ],
+      "explanation": {
+        "ru": "Präteritum Passiv единственное число: wurde + Partizip II",
+        "de": "Präteritum Passiv Singular: wurde + Partizip II",
+        "en": "Past Passive singular: wurde + past participle"
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Umformung ins Passiv: Man lädt die Gäste um 19 Uhr ein.",
+      "options": [
+        "Die Gäste werden um 19 Uhr eingeladen.",
+        "Die Gäste sind um 19 Uhr eingeladen.",
+        "Die Gäste werden um 19 Uhr einladen."
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Объект становится подлежащим, глагол - werden + Partizip II",
+        "de": "Das Objekt wird zum Subjekt, Verb wird zu werden + Partizip II",
+        "en": "Object becomes subject, verb becomes werden + past participle"
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Die Produkte ___ täglich kontrolliert. (werden, Präsens)",
+      "accepted": [
+        "werden"
+      ],
+      "explanation": {
+        "ru": "Präsens Passiv множественное число: werden + Partizip II",
+        "de": "Präsens Passiv Plural: werden + Partizip II",
+        "en": "Present Passive plural: werden + past participle"
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Das Formular ___ korrekt ausgefüllt.",
+      "options": [
+        "wird",
+        "werden",
+        "ist"
+      ],
+      "answer": 0,
+      "explanation": {
+        "ru": "Единственное число (das Formular): wird + Partizip II",
+        "de": "Singular (das Formular): wird + Partizip II",
+        "en": "Singular (das Formular): wird + past participle"
+      }
+    },
+    {
+      "type": "gap",
+      "prompt": "Die Tickets ___ online verkauft. (werden, Präsens)",
+      "accepted": [
+        "werden"
+      ],
+      "explanation": {
+        "ru": "Präsens Passiv множественное число: werden + Partizip II",
+        "de": "Präsens Passiv Plural: werden + Partizip II",
+        "en": "Present Passive plural: werden + past participle"
+      }
+    },
+    {
+      "type": "mc",
+      "prompt": "Der Antrag ___ gestern genehmigt.",
+      "options": [
+        "wird",
+        "wurde",
+        "ist"
+      ],
+      "answer": 1,
+      "explanation": {
+        "ru": "Präteritum Passiv: wurde + Partizip II для прошедшего события",
+        "de": "Präteritum Passiv: wurde + Partizip II für vergangenes Ereignis",
+        "en": "Past Passive: wurde + past participle for past event"
+      }
+    }
+  ]
+}

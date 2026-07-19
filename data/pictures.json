@@ -1,0 +1,90 @@
+[
+  {
+    "id": "arzt",
+    "file": "arzt.jpg",
+    "scene": "Beim Arzt",
+    "source": "https://commons.wikimedia.org/wiki/File:Doctor_examines_patient.jpg",
+    "license": "Public domain, Wikimedia Commons",
+    "artist": "Unknown photographer"
+  },
+  {
+    "id": "computerkurs",
+    "file": "computerkurs.jpg",
+    "scene": "Im Computerkurs",
+    "source": "https://www.goethe.de/resources/files/pdf209/modellsatz_jugendintegrationskurs.pdf",
+    "license": "Offizieller DTZ-Übungssatz — nur zur privaten Prüfungsvorbereitung",
+    "artist": "g.a.s.t. e.V. / BAMF"
+  },
+  {
+    "id": "kleidung_kaufen",
+    "file": "kleidung_kaufen.jpg",
+    "scene": "Kleidung kaufen",
+    "source": "https://www.gast.de/fileadmin/gast.de/GAST/5_DTZ/PDF/gast_DTZ_UEbungssatz_1.pdf",
+    "license": "Offizieller DTZ-Übungssatz — nur zur privaten Prüfungsvorbereitung",
+    "artist": "g.a.s.t. e.V. / BAMF"
+  },
+  {
+    "id": "lerngruppe",
+    "file": "lerngruppe.jpg",
+    "scene": "Lernen in der Gruppe",
+    "source": "https://www.goethe.de/resources/files/pdf209/modellsatz_jugendintegrationskurs.pdf",
+    "license": "Offizieller DTZ-Übungssatz — nur zur privaten Prüfungsvorbereitung",
+    "artist": "g.a.s.t. e.V. / BAMF"
+  },
+  {
+    "id": "muelltonnen",
+    "file": "muelltonnen.jpg",
+    "scene": "Müll und Garten",
+    "source": "https://www.goethe.de/resources/files/pdf209/dtz_modellsatz_e_2009_08.pdf",
+    "license": "Offizieller DTZ-Übungssatz — nur zur privaten Prüfungsvorbereitung",
+    "artist": "g.a.s.t. e.V. / BAMF"
+  },
+  {
+    "id": "muelltrennung",
+    "file": "muelltrennung.jpg",
+    "scene": "Mülltrennung / Umwelt",
+    "source": "https://www.goethe.de/resources/files/pdf209/dtz_modellsatz_e_2009_08.pdf",
+    "license": "Offizieller DTZ-Übungssatz — nur zur privaten Prüfungsvorbereitung",
+    "artist": "g.a.s.t. e.V. / BAMF"
+  },
+  {
+    "id": "nachbarn",
+    "file": "nachbarn.jpg",
+    "scene": "Gespräch unter Nachbarn",
+    "source": "https://www.gast.de/fileadmin/gast.de/GAST/5_DTZ/PDF/gast_DTZ_UEbungssatz_2.pdf",
+    "license": "Offizieller DTZ-Übungssatz — nur zur privaten Prüfungsvorbereitung",
+    "artist": "g.a.s.t. e.V. / BAMF"
+  },
+  {
+    "id": "nachbarschaftshilfe",
+    "file": "nachbarschaftshilfe.jpg",
+    "scene": "Nachbarschaftshilfe",
+    "source": "https://www.gast.de/fileadmin/gast.de/GAST/5_DTZ/PDF/gast_DTZ_UEbungssatz_2.pdf",
+    "license": "Offizieller DTZ-Übungssatz — nur zur privaten Prüfungsvorbereitung",
+    "artist": "g.a.s.t. e.V. / BAMF"
+  },
+  {
+    "id": "online_einkaufen",
+    "file": "online_einkaufen.jpg",
+    "scene": "Online-Einkaufen",
+    "source": "https://www.gast.de/fileadmin/gast.de/GAST/5_DTZ/PDF/gast_DTZ_UEbungssatz_1.pdf",
+    "license": "Offizieller DTZ-Übungssatz — nur zur privaten Prüfungsvorbereitung",
+    "artist": "g.a.s.t. e.V. / BAMF"
+  },
+  {
+    "id": "park",
+    "file": "park.jpg",
+    "scene": "Freizeit im Park",
+    "source": "https://commons.wikimedia.org/wiki/File:Summer_In_The_Park_01_Santa_Fe_Dam_Recreation_Area.jpg",
+    "license": "CC BY-SA 4.0, Wikimedia Commons",
+    "artist": "Russ Allison Loar"
+  },
+  {
+    "id": "restaurant",
+    "file": "restaurant.jpg",
+    "scene": "Im Straßencafé",
+    "source": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_B_145_Bild-F088826-0030,_Bonn,_G%C3%A4ste_im_Stra%C3%9Fencaf%C3%A8.jpg",
+    "license": "CC BY-SA 3.0 de, Wikimedia Commons",
+    "artist": "Julia Fassbender"
+  }
+]

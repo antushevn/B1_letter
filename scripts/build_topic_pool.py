@@ -25,8 +25,8 @@ from dotenv import load_dotenv
 
 # Import the same prompts and cheap model the live fallback uses.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from src.nodes import TOPIC_MODEL  # noqa: E402
-from src.prompts import TOPIC_SYSTEM, TOPIC_USER  # noqa: E402
+from src.common.llm import TOPIC_MODEL  # noqa: E402
+from src.letter.prompts import TOPIC_SYSTEM, TOPIC_USER  # noqa: E402
 
 OUTPUT_PATH = Path(__file__).resolve().parent.parent / "data" / "topics.json"
 POLL_SECONDS = 15
