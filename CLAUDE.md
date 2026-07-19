@@ -16,8 +16,13 @@ A LangGraph-based trainer for the B1 German exam with three practice modules:
 
 - Python 3.12
 - LangGraph — orchestrates the letter and picture flows (human-in-the-loop interrupts)
-- Anthropic Claude API — Haiku for all LLM calls (topic fallback, letter grading, picture grading)
+- Anthropic Claude API — Sonnet (`claude-sonnet-5`, effort "low") for the two grading calls;
+  Haiku for offline content generation and the topic fallback (see `src/common/llm.py`)
 - Streamlit — multi-page web UI (`st.navigation`)
+
+Versioning: bump `APP_VERSION` in `src/version.py` (+ pyproject) on user-visible changes —
+it is shown in the sidebar and confirms which build Streamlit Cloud is serving after its
+automatic redeploy from master.
 
 ## Setup
 

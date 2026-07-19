@@ -7,7 +7,13 @@ from pathlib import Path
 from langgraph.types import interrupt
 
 from ..common import storage
-from ..common.llm import FEEDBACK_LANGUAGES, PICTURE_MODEL, client, extract_json
+from ..common.llm import (
+    FEEDBACK_LANGUAGES,
+    GRADING_EFFORT,
+    PICTURE_MODEL,
+    client,
+    extract_json,
+)
 from .prompts import DESCRIBE_SYSTEM, DESCRIBE_USER_TEMPLATE
 from .state import PictureState
 
@@ -64,7 +70,8 @@ def check_description(state: PictureState) -> dict:
 
     response = client.messages.create(
         model=PICTURE_MODEL,
-        max_tokens=2048,
+        max_tokens=4096,
+        output_config={"effort": GRADING_EFFORT},
         system=system,
         messages=[
             {

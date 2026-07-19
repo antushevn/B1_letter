@@ -2,6 +2,7 @@ import streamlit as st
 
 from src.ui import grammar_view, letter_view, picture_view, stats_view
 from src.ui.i18n import DEFAULT_LANGUAGE, LANGUAGES, TRANSLATIONS
+from src.version import APP_VERSION
 
 
 def main():
@@ -21,6 +22,7 @@ def main():
             index=lang_codes.index(st.session_state.language),
             format_func=lambda code: LANGUAGES[code],
         )
+        st.caption(f"v{APP_VERSION}")
     # Re-resolve in case the selector just changed the language.
     T = TRANSLATIONS[st.session_state.language]
 

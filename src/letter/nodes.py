@@ -6,7 +6,14 @@ from pathlib import Path
 from langgraph.types import interrupt
 
 from ..common import storage
-from ..common.llm import CHECK_MODEL, FEEDBACK_LANGUAGES, TOPIC_MODEL, client, extract_json
+from ..common.llm import (
+    CHECK_MODEL,
+    FEEDBACK_LANGUAGES,
+    GRADING_EFFORT,
+    TOPIC_MODEL,
+    client,
+    extract_json,
+)
 from .prompts import CHECK_SYSTEM, CHECK_USER_TEMPLATE, TOPIC_SYSTEM, TOPIC_USER
 from .state import PracticeState
 
@@ -46,9 +53,12 @@ def await_letter(state: PracticeState) -> dict:
 def check_letter(state: PracticeState) -> dict:
     feedback_language = FEEDBACK_LANGUAGES.get(state.get("language", "en"), "English")
     system = CHECK_SYSTEM.replace("{feedback_language}", feedback_language)
+    # Sonnet thinks adaptively by default and thinking shares max_tokens with
+    # the answer, hence the higher cap than the old Haiku setup needed.
     response = client.messages.create(
         model=CHECK_MODEL,
-        max_tokens=2048,
+        max_tokens=4096,
+        output_config={"effort": GRADING_EFFORT},
         system=system,
         messages=[
             {

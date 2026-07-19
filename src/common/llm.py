@@ -12,11 +12,16 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Model tiering: everything runs on cheap Haiku (vision-capable, enough for
-# grading). Bump per-task constants individually if a pricier model is needed.
+# Model tiering: offline content generation stays on cheap Haiku; the two
+# grading paths (the only live calls the app makes) run on Sonnet at low
+# effort for noticeably better error analysis at moderate cost.
 TOPIC_MODEL = "claude-haiku-4-5-20251001"
-CHECK_MODEL = "claude-haiku-4-5-20251001"
-PICTURE_MODEL = "claude-haiku-4-5-20251001"
+CHECK_MODEL = "claude-sonnet-5"
+PICTURE_MODEL = "claude-sonnet-5"
+
+# Effort for grading calls: "low" keeps latency/cost down; raise to "medium"
+# if grading quality ever feels shallow.
+GRADING_EFFORT = "low"
 
 # Feedback language names passed to examiner prompts, keyed by UI language code.
 FEEDBACK_LANGUAGES = {"ru": "Russian", "de": "German", "en": "English"}
