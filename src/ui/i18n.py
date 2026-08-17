@@ -126,6 +126,8 @@ TRANSLATIONS = {
         "backup_title": "Резервная копия истории",
         "backup_caption": "При развёртывании в облаке файл истории может сбрасываться при "
                           "перезапуске. Скачивайте копию и загружайте её обратно при необходимости.",
+        "backup_caption_mongodb": "История хранится в базе данных и сохраняется между "
+                                  "перезапусками. Экспорт/импорт — только для резервных копий.",
         "backup_download": "Скачать историю",
         "backup_upload": "Загрузить историю (.jsonl)",
         "backup_success": "История объединена: всего записей — {n}.",
@@ -244,6 +246,8 @@ TRANSLATIONS = {
         "backup_title": "Backup der Historie",
         "backup_caption": "Beim Cloud-Hosting kann die Historie bei einem Neustart verloren gehen. "
                           "Lade regelmäßig eine Kopie herunter und bei Bedarf wieder hoch.",
+        "backup_caption_mongodb": "Die Historie wird in einer Datenbank gespeichert und bleibt "
+                                  "über Neustarts hinweg erhalten. Export/Import dient nur als Backup.",
         "backup_download": "Historie herunterladen",
         "backup_upload": "Historie hochladen (.jsonl)",
         "backup_success": "Historie zusammengeführt: insgesamt {n} Einträge.",
@@ -362,6 +366,8 @@ TRANSLATIONS = {
         "backup_title": "History backup",
         "backup_caption": "On cloud hosting the history file may reset on restart. Download a copy "
                           "regularly and upload it back when needed.",
+        "backup_caption_mongodb": "History is stored in a database and persists across restarts. "
+                                  "Export/import is only for backups.",
         "backup_download": "Download history",
         "backup_upload": "Upload history (.jsonl)",
         "backup_success": "History merged: {n} records in total.",
