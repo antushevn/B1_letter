@@ -67,6 +67,8 @@ def _grammar_tab(T):
 
 def _backup_section(T):
     with st.expander(T["backup_title"]):
+        backend_label = T[f"backup_backend_{storage.backend_name()}"]
+        st.caption(T["backup_backend"].format(backend=backend_label))
         st.caption(T["backup_caption"])
         data = storage.export_bytes()
         if data:

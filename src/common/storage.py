@@ -1,23 +1,96 @@
-"""Local persistence + aggregation for graded practice attempts, all modules.
+"""Persistence + aggregation for graded practice attempts, all modules.
 
-Single-user local app, so history is a simple append-only JSON-lines file
-(one attempt per line) at data/history.jsonl. No external dependencies.
+Two interchangeable backends, chosen at runtime by save_attempt/load_attempts:
+
+- **MongoDB** (when MONGO_URI is set, via local .env or Streamlit secrets) —
+  the durable backend. History lives in an external Atlas cluster, so it
+  survives the ephemeral hosted filesystem and app restarts. This is what the
+  deployed app uses.
+- **JSON-lines file** at data/history.jsonl (the fallback when no MONGO_URI) —
+  one attempt per line, no external services. Keeps local dev and the offline
+  content scripts working with zero extra setup.
 
 Every record carries a "module" field: "letter", "picture", or "grammar".
-Records written before modules existed have no field and count as "letter".
+Legacy file records written before modules existed have no field and count as
+"letter"; Mongo records always carry one.
 
-NOTE for hosted deployments (Streamlit Community Cloud): the filesystem is
-ephemeral, so the stats page offers export/import of this file. A future
-swap to a hosted DB only needs to replace save_attempt/load_attempts.
+The stats page still offers export/import (JSON-lines) — handy for backups and
+for seeding a fresh Mongo collection from a previously exported file.
 """
 
 import json
+import os
 from datetime import datetime, timezone
 from pathlib import Path
+
+from dotenv import load_dotenv
+
+# storage may be imported before llm.py, so load .env here too (idempotent).
+load_dotenv()
 
 HISTORY_PATH = Path(__file__).resolve().parent.parent.parent / "data" / "history.jsonl"
 
 MODULES = ("letter", "picture", "grammar")
+
+# ── Durable backend (optional MongoDB) ───────────────────────────────────────
+# All attempts land in one collection; the "module" field distinguishes them.
+# Override the database name with MONGO_DB if you want to isolate environments
+# (e.g. a separate db for local experiments vs. the deployed app).
+_MONGO_DB_NAME = os.environ.get("MONGO_DB", "b1_trainer")
+_MONGO_COLLECTION = "attempts"
+
+_collection = None          # cached pymongo Collection, or None for file backend
+_collection_resolved = False
+
+
+def _mongo_uri() -> str | None:
+    """Connection string from the environment (.env) or Streamlit secrets."""
+    uri = os.environ.get("MONGO_URI")
+    if uri:
+        return uri
+    try:
+        import streamlit as st
+
+        if "MONGO_URI" in st.secrets:
+            return st.secrets["MONGO_URI"]
+    except Exception:
+        # Not running under Streamlit (offline scripts) — env alone rules.
+        pass
+    return None
+
+
+def _get_collection():
+    """Return the MongoDB attempts collection, or None to use the file backend.
+
+    Resolved once and cached. Any failure — no URI, pymongo missing, cluster
+    unreachable — falls back to the local file so the app still runs.
+    """
+    global _collection, _collection_resolved
+    if _collection_resolved:
+        return _collection
+    _collection_resolved = True
+
+    uri = _mongo_uri()
+    if not uri:
+        return None
+    try:
+        from pymongo import MongoClient
+
+        mongo_client = MongoClient(
+            uri, serverSelectionTimeoutMS=5000, appname="b1-trainer"
+        )
+        mongo_client.admin.command("ping")  # fail fast if unreachable
+        coll = mongo_client[_MONGO_DB_NAME][_MONGO_COLLECTION]
+        coll.create_index([("timestamp", 1), ("module", 1)])
+        _collection = coll
+    except Exception:
+        _collection = None
+    return _collection
+
+
+def backend_name() -> str:
+    """'mongodb' when the durable backend is active, else 'file'. For the UI."""
+    return "mongodb" if _get_collection() is not None else "file"
 
 # Fixed error taxonomy — the model tags every letter/picture error with one of
 # these keys so statistics can group errors by type ("weak areas"). Keys are
@@ -41,22 +114,32 @@ READINESS_WINDOW = 5
 
 
 def save_attempt(record: dict, module: str = "letter") -> None:
-    """Append one graded attempt to the history file."""
+    """Persist one graded attempt to the active backend (Mongo or file)."""
     record = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "module": module,
         **record,
     }
+    coll = _get_collection()
+    if coll is not None:
+        coll.insert_one(dict(record))  # copy: insert_one adds an _id in place
+        return
     HISTORY_PATH.parent.mkdir(parents=True, exist_ok=True)
     with HISTORY_PATH.open("a", encoding="utf-8") as f:
         f.write(json.dumps(record, ensure_ascii=False) + "\n")
 
 
 def load_attempts(module: str | None = None) -> list[dict]:
-    """Attempts in chronological (write) order; skip malformed lines.
+    """Attempts in chronological (timestamp) order.
 
-    With `module` given, only that module's attempts are returned.
+    With `module` given, only that module's attempts are returned. Malformed
+    file lines are skipped; the Mongo `_id` field is projected out.
     """
+    coll = _get_collection()
+    if coll is not None:
+        query = {} if module is None else {"module": module}
+        return list(coll.find(query, {"_id": 0}).sort("timestamp", 1))
+
     if not HISTORY_PATH.exists():
         return []
     attempts = []
@@ -149,20 +232,19 @@ def grammar_topic_stats(attempts: list[dict]) -> dict[str, dict]:
 # ── Export / import (survival kit for ephemeral hosted filesystems) ──────────
 
 def export_bytes() -> bytes:
-    """Raw history file for a download button (empty if no history yet)."""
-    if not HISTORY_PATH.exists():
-        return b""
-    return HISTORY_PATH.read_bytes()
+    """History as JSON-lines for a download button (empty if no history yet).
 
-
-def import_bytes(data: bytes) -> int:
-    """Merge an uploaded history export into the current file.
-
-    Lines are deduplicated on (timestamp, module) and rewritten in timestamp
-    order. Returns the number of records after the merge; raises ValueError
-    if the upload contains no valid records.
+    Reads through the active backend, so it works with Mongo or the file.
     """
-    imported = []
+    attempts = load_attempts()
+    if not attempts:
+        return b""
+    body = "\n".join(json.dumps(r, ensure_ascii=False) for r in attempts)
+    return (body + "\n").encode("utf-8")
+
+
+def _parse_export(data: bytes) -> list[dict]:
+    records = []
     for line in data.decode("utf-8", errors="replace").splitlines():
         line = line.strip()
         if not line:
@@ -172,9 +254,36 @@ def import_bytes(data: bytes) -> int:
         except ValueError:
             continue
         if isinstance(record, dict) and record.get("timestamp"):
-            imported.append(record)
+            record.pop("_id", None)  # never carry a foreign Mongo id across
+            records.append(record)
+    return records
+
+
+def import_bytes(data: bytes) -> int:
+    """Merge an uploaded JSON-lines export into the active backend.
+
+    Records are deduplicated on (timestamp, module). Returns the number of
+    records after the merge; raises ValueError if the upload has none valid.
+    """
+    imported = _parse_export(data)
     if not imported:
         raise ValueError("no valid records in upload")
+
+    coll = _get_collection()
+    if coll is not None:
+        existing = {
+            (a.get("timestamp"), a.get("module", "letter")) for a in load_attempts()
+        }
+        fresh = []
+        for record in imported:
+            key = (record.get("timestamp"), record.get("module", "letter"))
+            if key in existing:
+                continue
+            existing.add(key)
+            fresh.append(record)
+        if fresh:
+            coll.insert_many([dict(r) for r in fresh])
+        return coll.count_documents({})
 
     merged: dict[tuple, dict] = {}
     for record in load_attempts() + imported:

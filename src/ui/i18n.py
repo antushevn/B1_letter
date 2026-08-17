@@ -130,6 +130,9 @@ TRANSLATIONS = {
         "backup_upload": "Загрузить историю (.jsonl)",
         "backup_success": "История объединена: всего записей — {n}.",
         "backup_error": "Файл не содержит корректных записей.",
+        "backup_backend": "Хранилище: {backend}",
+        "backup_backend_mongodb": "MongoDB (постоянное)",
+        "backup_backend_file": "локальный файл (сбрасывается в облаке)",
     },
     "de": {
         "page_title": "B1-Trainer",
@@ -245,6 +248,9 @@ TRANSLATIONS = {
         "backup_upload": "Historie hochladen (.jsonl)",
         "backup_success": "Historie zusammengeführt: insgesamt {n} Einträge.",
         "backup_error": "Die Datei enthält keine gültigen Einträge.",
+        "backup_backend": "Speicher: {backend}",
+        "backup_backend_mongodb": "MongoDB (dauerhaft)",
+        "backup_backend_file": "lokale Datei (wird in der Cloud zurückgesetzt)",
     },
     "en": {
         "page_title": "B1 Trainer",
@@ -360,6 +366,9 @@ TRANSLATIONS = {
         "backup_upload": "Upload history (.jsonl)",
         "backup_success": "History merged: {n} records in total.",
         "backup_error": "The file contains no valid records.",
+        "backup_backend": "Storage: {backend}",
+        "backup_backend_mongodb": "MongoDB (durable)",
+        "backup_backend_file": "local file (resets on cloud)",
     },
 }
 

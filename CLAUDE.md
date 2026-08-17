@@ -47,7 +47,8 @@ streamlit run app.py
 app.py                     entry point: sidebar language selector + st.navigation
 src/common/
   llm.py                   shared Anthropic client, model tiering, secrets bridge
-  storage.py               history.jsonl persistence + aggregations (all modules)
+  storage.py               attempt persistence + aggregations (all modules); MongoDB
+                           backend when MONGO_URI is set, else data/history.jsonl
 src/letter/                LangGraph flow: generate_topic → await_letter → check_letter
 src/picture/               LangGraph flow: pick_picture → await_description → check_description
 src/grammar/               no LLM: curriculum loader + deterministic checking + recommendations
@@ -62,7 +63,8 @@ data/
                            hand-reviewed); each drill session samples 8 random from core + pool
   pictures/ + pictures.json  photos from official DTZ model sets (g.a.s.t./BAMF/Goethe) plus a
                            few Commons photos; scripts/build_picture_pool.py only for Commons ones
-  history.jsonl            append-only attempt log (gitignored, one JSON record per line)
+  history.jsonl            append-only attempt log — file backend only (gitignored, one
+                           JSON record per line); unused when MongoDB is active
 ```
 
 Key design decisions:
@@ -77,7 +79,12 @@ Key design decisions:
   by those counts — this is how "adjust grammar to my weaknesses" works. Don't rename categories.
 - **History records** always carry `module` ("letter" | "picture" | "grammar"); records without the
   field are legacy letter attempts. Grammar attempts store `wrong_categories` instead of `errors`.
-- The stats page has export/import of `history.jsonl` because hosted filesystems are ephemeral.
+- **Storage backend**: `storage.save_attempt`/`load_attempts` transparently target MongoDB when
+  `MONGO_URI` is set (local `.env` or Streamlit secrets), else the local `history.jsonl` file. The
+  deployed app uses Mongo so history survives the ephemeral hosted filesystem; local dev and the
+  offline scripts work file-only with no extra setup. `pymongo` is imported lazily and any
+  connection failure falls back to the file, so the app always runs. The stats page still offers
+  JSON-lines export/import (backups, and seeding a fresh Mongo collection from an old export).
 
 ## LangGraph conventions
 
