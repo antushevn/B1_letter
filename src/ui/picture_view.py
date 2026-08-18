@@ -7,7 +7,7 @@ from langgraph.types import Command
 from ..picture.graph import create_picture_graph
 from ..picture.nodes import get_entry, picture_path
 from .i18n import PICTURE_CRITERION_KEYS
-from .widgets import disable_spellcheck, render_assessment
+from .widgets import render_assessment
 
 # In the exam the description is spoken and takes about 3 minutes.
 EXAM_SECONDS = 180
@@ -80,7 +80,6 @@ def render(T):
             st.markdown(T["pic_structure_hint"])
 
         description = st.text_area(T["pic_desc_label"], height=260, key="pic_input")
-        disable_spellcheck()
 
         word_count = len(description.split()) if description.strip() else 0
         colour = "green" if 60 <= word_count <= 120 else "orange"

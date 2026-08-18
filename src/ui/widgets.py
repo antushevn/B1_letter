@@ -1,112 +1,20 @@
 """Small render helpers shared by the letter and picture pages."""
 
-import json
-
 import streamlit as st
-import streamlit.components.v1 as components
 
 from ..common import storage
 from .i18n import GRADE_COLOUR, SCORE_COLOUR
-
-# Word-count colours mirror Streamlit's :green[]/:orange[] text palette.
-_WC_IN_RANGE = "#21c354"
-_WC_OUT_RANGE = "#ff8700"
 
 # Severity → traffic-light icon for the error list (order = worst first).
 _SEVERITY_ICON = {"critical": "🔴", "moderate": "🟡", "minor": "🟢"}
 
 
-def disable_spellcheck():
-    """Turn off the browser's native spell-/grammar-check on textareas so the
-    learner writes unaided (feedback is given only after submission).
-
-    Streamlit re-mounts the textarea on reruns (e.g. after the word counter
-    updates), which resets the flag and lets the red underlines creep back. This
-    re-applies the flag on a short, *bounded* retry chain that then stops — like
-    live_word_count. It deliberately does NOT observe the whole document:
-    a MutationObserver on the parent body fires on Streamlit's constant DOM
-    churn and, stacking one per rerun, pins the browser's main thread (frozen
-    cursor, dead copy, tab hangs). disable_spellcheck is re-called on every
-    rerun anyway, so each rerun's re-mount is covered by the next chain."""
-    components.html(
-        """
-        <script>
-        (function () {
-            const doc = window.parent.document;
-            let tries = 0;
-            function apply() {
-                doc.querySelectorAll('textarea').forEach((t) => {
-                    t.setAttribute('spellcheck', 'false');
-                    t.setAttribute('autocorrect', 'off');
-                    t.setAttribute('autocapitalize', 'off');
-                    t.setAttribute('autocomplete', 'off');
-                    t.spellcheck = false;
-                });
-                if (tries++ < 20) setTimeout(apply, 200);
-            }
-            apply();
-        })();
-        </script>
-        """,
-        height=0,
-    )
-
-
 def word_count_line(T, word_count, low, high):
-    """Render the live word-count readout. The number lives in a span that
-    live_word_count() updates in the browser; the value passed here is only the
-    initial (server-side) count for the first paint."""
-    colour = _WC_IN_RANGE if low <= word_count <= high else _WC_OUT_RANGE
-    st.markdown(
-        f"{T['words']}: <span id='wc-live' "
-        f"style='color:{colour};font-weight:700'>{word_count}</span>",
-        unsafe_allow_html=True,
-    )
-
-
-def live_word_count(label, low, high):
-    """Keep the word counter in sync while the user types. Streamlit only reruns
-    a text_area on blur, so the server-rendered number freezes mid-typing. This
-    attaches a browser-side 'input' listener that recomputes the count and
-    recolours the readout (span#wc-live) with no rerun/round-trip.
-
-    Deliberately never polls indefinitely: it retries the DOM lookup a bounded
-    number of times and then gives up, so a missing target (e.g. if the host
-    ever strips the span id) can't leave a timer spinning and pinning the tab's
-    main thread. The listener is de-duplicated so reruns never stack handlers."""
-    components.html(
-        f"""
-        <script>
-        (function () {{
-            const doc = window.parent.document;
-            const LABEL = {json.dumps(label)};
-            const LOW = {low}, HIGH = {high};
-            const IN = {json.dumps(_WC_IN_RANGE)}, OUT = {json.dumps(_WC_OUT_RANGE)};
-            let tries = 0;
-            function bind() {{
-                const ta = doc.querySelector('textarea[aria-label=' + JSON.stringify(LABEL) + ']')
-                           || doc.querySelector('textarea');
-                const out = doc.getElementById('wc-live');
-                if (!ta || !out) {{
-                    if (tries++ < 30) setTimeout(bind, 150);
-                    return;
-                }}
-                const update = () => {{
-                    const n = (ta.value.trim().match(/\\S+/g) || []).length;
-                    out.textContent = n;
-                    out.style.color = (n >= LOW && n <= HIGH) ? IN : OUT;
-                }};
-                if (ta._wcUpdate) ta.removeEventListener('input', ta._wcUpdate);
-                ta._wcUpdate = update;
-                ta.addEventListener('input', update);
-                update();
-            }}
-            bind();
-        }})();
-        </script>
-        """,
-        height=0,
-    )
+    """Static word-count readout. Updates when Streamlit reruns (e.g. on blur or
+    button press), not per keystroke: the earlier live/JS version churned an
+    iframe on every rerun and froze the browser, so it was removed."""
+    colour = "green" if low <= word_count <= high else "orange"
+    st.markdown(f"{T['words']}: :{colour}[**{word_count}**]")
 
 
 def render_readiness(T, attempts):

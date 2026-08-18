@@ -7,8 +7,6 @@ from ..common import storage
 from ..letter.graph import create_graph
 from .i18n import LETTER_CRITERION_KEYS
 from .widgets import (
-    disable_spellcheck,
-    live_word_count,
     render_assessment,
     render_readiness,
     word_count_line,
@@ -59,11 +57,9 @@ def render(T):
         st.info(st.session_state.letter_topic)
 
         user_letter = st.text_area(T["letter_label"], height=320, key="letter_input")
-        disable_spellcheck()
 
         word_count = len(user_letter.split()) if user_letter.strip() else 0
         word_count_line(T, word_count, WC_LOW, WC_HIGH)
-        live_word_count(T["letter_label"], WC_LOW, WC_HIGH)
 
         col1, col2 = st.columns([1, 5])
         with col1:
