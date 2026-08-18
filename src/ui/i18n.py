@@ -52,6 +52,7 @@ TRANSLATIONS = {
         "task": "Задание",
         "letter_label": "Напишите здесь своё письмо (около 150 слов):",
         "evaluating": "Письмо оценивается …",
+        "your_letter": "Ваше письмо",
         "missing": "Незатронутые пункты",
         "letter_criterion_labels": {
             "content": "Содержание",
@@ -220,6 +221,7 @@ TRANSLATIONS = {
         "task": "Aufgabe",
         "letter_label": "Schreibe deinen Brief hier (circa 150 Wörter):",
         "evaluating": "Brief wird bewertet …",
+        "your_letter": "Dein Brief",
         "missing": "Nicht behandelte Punkte",
         "letter_criterion_labels": {
             "content": "Inhalt",
@@ -384,6 +386,7 @@ TRANSLATIONS = {
         "task": "Task",
         "letter_label": "Write your letter here (about 150 words):",
         "evaluating": "Evaluating letter …",
+        "your_letter": "Your letter",
         "missing": "Points not addressed",
         "letter_criterion_labels": {
             "content": "Content",

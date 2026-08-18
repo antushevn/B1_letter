@@ -79,6 +79,7 @@ def render(T):
             with st.spinner(T["evaluating"]):
                 result = graph.invoke(Command(resume=user_letter), config)
             st.session_state.letter_result = {
+                "user_letter": user_letter,
                 "score": result.get("score", ""),
                 "feedback": result.get("feedback", ""),
                 "criterion_scores": result.get("criterion_scores", {}),
@@ -92,6 +93,11 @@ def render(T):
     elif st.session_state.letter_phase == "done":
         st.subheader(T["task"])
         st.info(st.session_state.letter_topic)
+
+        letter_text = st.session_state.letter_result.get("user_letter", "")
+        if letter_text:
+            with st.expander(T["your_letter"], expanded=True):
+                st.text(letter_text)
 
         render_assessment(
             T,

@@ -48,31 +48,41 @@ def live_word_count(label, low, high):
     """Keep the word counter in sync while the user types. Streamlit only reruns
     a text_area on blur, so the server-rendered number freezes mid-typing. This
     attaches a browser-side 'input' listener that recomputes the count and
-    recolours the readout (span#wc-live) with no rerun/round-trip."""
+    recolours the readout (span#wc-live) with no rerun/round-trip.
+
+    Deliberately never polls indefinitely: it retries the DOM lookup a bounded
+    number of times and then gives up, so a missing target (e.g. if the host
+    ever strips the span id) can't leave a timer spinning and pinning the tab's
+    main thread. The listener is de-duplicated so reruns never stack handlers."""
     components.html(
         f"""
         <script>
-        const doc = window.parent.document;
-        const LABEL = {json.dumps(label)};
-        const LOW = {low}, HIGH = {high};
-        function bind() {{
-            const ta = doc.querySelector('textarea[aria-label=' + JSON.stringify(LABEL) + ']')
-                       || doc.querySelector('textarea');
-            const out = doc.getElementById('wc-live');
-            if (!ta || !out) {{ return setTimeout(bind, 200); }}
-            const update = () => {{
-                const n = (ta.value.trim().match(/\\S+/g) || []).length;
-                out.textContent = n;
-                out.style.color = (n >= LOW && n <= HIGH) ? {json.dumps(_WC_IN_RANGE)}
-                                                          : {json.dumps(_WC_OUT_RANGE)};
-            }};
-            if (!ta.dataset.wcBound) {{
+        (function () {{
+            const doc = window.parent.document;
+            const LABEL = {json.dumps(label)};
+            const LOW = {low}, HIGH = {high};
+            const IN = {json.dumps(_WC_IN_RANGE)}, OUT = {json.dumps(_WC_OUT_RANGE)};
+            let tries = 0;
+            function bind() {{
+                const ta = doc.querySelector('textarea[aria-label=' + JSON.stringify(LABEL) + ']')
+                           || doc.querySelector('textarea');
+                const out = doc.getElementById('wc-live');
+                if (!ta || !out) {{
+                    if (tries++ < 30) setTimeout(bind, 150);
+                    return;
+                }}
+                const update = () => {{
+                    const n = (ta.value.trim().match(/\\S+/g) || []).length;
+                    out.textContent = n;
+                    out.style.color = (n >= LOW && n <= HIGH) ? IN : OUT;
+                }};
+                if (ta._wcUpdate) ta.removeEventListener('input', ta._wcUpdate);
+                ta._wcUpdate = update;
                 ta.addEventListener('input', update);
-                ta.dataset.wcBound = '1';
+                update();
             }}
-            update();
-        }}
-        bind();
+            bind();
+        }})();
         </script>
         """,
         height=0,
