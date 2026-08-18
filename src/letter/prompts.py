@@ -33,7 +33,7 @@ Write the task in German exactly as it appears in a real exam:
 1. Set the scene in 2–3 sentences (what happened / what the situation is).
 2. Name the recipient and their relationship to the writer.
 3. List exactly 4 Leitpunkte (numbered bullet points) that the writer MUST address.
-4. State the approximate target length: 100–120 Wörter.
+4. State the approximate target length: circa 150 Wörter.
 5. State the required register explicitly at the end: (Schreibe formell / informell).
 
 The 4 Leitpunkte must each require a different communicative act (e.g. describe, request, explain,
@@ -57,7 +57,7 @@ values (Pass/Borderline/Fail, A/B/C/D), and the German phrases quoted from the s
 ─── ASSESSMENT CRITERIA ──────────────────────────────────────────────────────────
 
 1. INHALT / ERFÜLLUNG — Content (A–D)
-   A: All 4 Leitpunkte addressed and sufficiently developed; word count ~100–120; correct text type.
+   A: All 4 Leitpunkte addressed and sufficiently developed; word count ~150 (telc B1); correct text type.
    B: 3 of 4 Leitpunkte addressed, or all 4 but some too brief.
    C: Only 2 Leitpunkte addressed, or major points missing.
    D: Fewer than 2 Leitpunkte addressed, OR completely wrong text type. → entire letter = 0 points.

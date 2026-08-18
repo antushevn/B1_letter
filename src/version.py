@@ -5,4 +5,4 @@ automatically from master, and the sidebar number is how we confirm the new
 build is live. Keep pyproject.toml's [project] version in sync.
 """
 
-APP_VERSION = "0.3.1"
+APP_VERSION = "0.4.2"

@@ -1,6 +1,6 @@
 import streamlit as st
 
-from src.ui import grammar_view, letter_view, picture_view, stats_view
+from src.ui import grammar_view, letter_view, picture_view, reference_view, stats_view
 from src.ui.i18n import DEFAULT_LANGUAGE, LANGUAGES, TRANSLATIONS
 from src.version import APP_VERSION
 
@@ -30,6 +30,7 @@ def main():
         st.Page(lambda: letter_view.render(T), title=T["nav_letter"], url_path="letter"),
         st.Page(lambda: grammar_view.render(T), title=T["nav_grammar"], url_path="grammar"),
         st.Page(lambda: picture_view.render(T), title=T["nav_picture"], url_path="picture"),
+        st.Page(lambda: reference_view.render(T), title=T["nav_reference"], url_path="reference"),
         st.Page(lambda: stats_view.render(T), title=T["nav_stats"], url_path="stats"),
     ]
     st.navigation(pages).run()

@@ -6,7 +6,15 @@ from langgraph.types import Command
 from ..common import storage
 from ..letter.graph import create_graph
 from .i18n import LETTER_CRITERION_KEYS
-from .widgets import disable_spellcheck, render_assessment, render_readiness
+from .widgets import (
+    disable_spellcheck,
+    live_word_count,
+    render_assessment,
+    render_readiness,
+    word_count_line,
+)
+
+WC_LOW, WC_HIGH = 130, 170
 
 
 @st.cache_resource
@@ -54,8 +62,8 @@ def render(T):
         disable_spellcheck()
 
         word_count = len(user_letter.split()) if user_letter.strip() else 0
-        colour = "green" if 100 <= word_count <= 120 else "orange"
-        st.markdown(f"{T['words']}: :{colour}[**{word_count}**]")
+        word_count_line(T, word_count, WC_LOW, WC_HIGH)
+        live_word_count(T["letter_label"], WC_LOW, WC_HIGH)
 
         col1, col2 = st.columns([1, 5])
         with col1:

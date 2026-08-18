@@ -1,0 +1,327 @@
+{
+  "redemittel": [
+    {
+      "function": "anrede_formell",
+      "phrases": [
+        "Sehr geehrte Damen und Herren,",
+        "Sehr geehrter Herr Schmidt,",
+        "Sehr geehrte Frau Müller,",
+        "Sehr geehrte Frau Dr. Weber,"
+      ]
+    },
+    {
+      "function": "anrede_informell",
+      "phrases": [
+        "Liebe Anna,",
+        "Lieber Tom,",
+        "Hallo Sarah,",
+        "Liebe Familie Berger,"
+      ]
+    },
+    {
+      "function": "einleitung_grund",
+      "phrases": [
+        "ich schreibe Ihnen, weil …",
+        "ich wende mich an Sie, weil …",
+        "mit diesem Brief möchte ich mich über … beschweren.",
+        "ich interessiere mich für … und hätte dazu einige Fragen.",
+        "vielen Dank für Ihre E-Mail / Ihren Brief.",
+        "wie geht es dir? Bei mir ist alles in Ordnung.",
+        "ich habe lange nichts von dir gehört und wollte mich mal wieder melden."
+      ]
+    },
+    {
+      "function": "bezug",
+      "phrases": [
+        "ich habe Ihre Anzeige im Internet / in der Zeitung gelesen.",
+        "Bezug nehmend auf unser Telefongespräch vom …",
+        "wie telefonisch besprochen, …",
+        "in Ihrer Anzeige schreiben Sie, dass …"
+      ]
+    },
+    {
+      "function": "beschwerde",
+      "phrases": [
+        "leider muss ich feststellen, dass …",
+        "das Gerät funktioniert leider nicht richtig.",
+        "ich bin mit … überhaupt nicht zufrieden.",
+        "das ist für mich nicht akzeptabel.",
+        "seit … funktioniert die Heizung nicht mehr."
+      ]
+    },
+    {
+      "function": "info_anfrage",
+      "phrases": [
+        "könnten Sie mir bitte mitteilen, ob / wann / wie …?",
+        "ich würde gern wissen, ob …",
+        "außerdem interessiert mich, wie viel … kostet.",
+        "wäre es möglich, …?",
+        "ich hätte noch eine Frage zu …"
+      ]
+    },
+    {
+      "function": "forderung_bitte",
+      "phrases": [
+        "ich bitte Sie, das Problem so schnell wie möglich zu lösen.",
+        "ich möchte Sie bitten, … zu reparieren / zu ersetzen / zurückzuerstatten.",
+        "ich erwarte eine Antwort bis spätestens …",
+        "bitte teilen Sie mir mit, wie es weitergeht.",
+        "könnten Sie mir bitte einen neuen Termin geben?"
+      ]
+    },
+    {
+      "function": "vorschlag_termin",
+      "phrases": [
+        "ich schlage vor, dass wir uns am … treffen.",
+        "würde Ihnen der … um … Uhr passen?",
+        "wir könnten uns zum Beispiel am Wochenende treffen.",
+        "hättest du am Samstag Zeit?"
+      ]
+    },
+    {
+      "function": "einladung",
+      "phrases": [
+        "ich möchte dich herzlich zu … einladen.",
+        "ich feiere am … meinen Geburtstag und würde mich freuen, wenn du kommst.",
+        "hast du Lust, …?",
+        "es wäre schön, wenn du dabei sein könntest."
+      ]
+    },
+    {
+      "function": "entschuldigung",
+      "phrases": [
+        "es tut mir sehr leid, dass …",
+        "ich möchte mich dafür entschuldigen, dass …",
+        "leider kann ich nicht kommen, weil …",
+        "bitte entschuldige die späte Antwort."
+      ]
+    },
+    {
+      "function": "dank",
+      "phrases": [
+        "vielen Dank für deine Hilfe / deine Einladung / das schöne Geschenk.",
+        "ich weiß das wirklich sehr zu schätzen.",
+        "es war sehr nett von dir, dass …",
+        "vielen Dank im Voraus für Ihre Mühe."
+      ]
+    },
+    {
+      "function": "verknuepfung",
+      "phrases": [
+        "zuerst … / zunächst …",
+        "außerdem … / darüber hinaus …",
+        "deshalb / deswegen …",
+        "trotzdem …",
+        "einerseits … andererseits …",
+        "zum Schluss …"
+      ]
+    },
+    {
+      "function": "schluss",
+      "phrases": [
+        "ich würde mich über eine baldige Antwort freuen.",
+        "für weitere Fragen stehe ich Ihnen gern zur Verfügung.",
+        "ich freue mich, von dir zu hören.",
+        "melde dich einfach, wenn du Fragen hast.",
+        "ich freue mich schon sehr darauf!"
+      ]
+    },
+    {
+      "function": "gruss_formell",
+      "phrases": [
+        "Mit freundlichen Grüßen",
+        "Freundliche Grüße"
+      ]
+    },
+    {
+      "function": "gruss_informell",
+      "phrases": [
+        "Viele Grüße",
+        "Liebe Grüße",
+        "Bis bald"
+      ]
+    }
+  ],
+  "letters": [
+    {
+      "id": "reklamation_produkt",
+      "category": "complaint",
+      "register": "formell",
+      "title": "Reklamation: defektes Produkt (Online-Shop)",
+      "situation": "Sie haben in einem Online-Shop eine Kaffeemaschine bestellt. Das Gerät ist beschädigt angekommen und funktioniert nicht. Schreiben Sie an den Kundenservice.\n\nLeitpunkte:\n- Grund des Schreibens / was Sie bestellt haben\n- das Problem genau beschreiben\n- eine Lösung fordern (Austausch oder Rückerstattung)\n- eine Frist für die Antwort nennen",
+      "letter": "Sehr geehrte Damen und Herren,\n\nich schreibe Ihnen, weil ich mit meiner Bestellung nicht zufrieden bin. Am 3. März habe ich in Ihrem Online-Shop eine Kaffeemaschine bestellt (Bestellnummer 45871).\n\nDas Paket ist gestern angekommen, aber leider ist das Gerät beschädigt. Das Gehäuse hat einen Riss und die Maschine lässt sich nicht einschalten. Da das Produkt in der Anzeige als „hochwertig“ beschrieben wurde, bin ich darüber sehr enttäuscht.\n\nIch möchte Sie deshalb bitten, mir die Maschine auszutauschen oder mir den Kaufpreis zurückzuerstatten. Außerdem hätte ich gern eine Information darüber, wie ich das defekte Gerät zurückschicken kann.\n\nIch erwarte Ihre Antwort bis spätestens nächste Woche. Vielen Dank im Voraus für Ihre Mühe.\n\nMit freundlichen Grüßen\nMaria Petrowa",
+      "highlights": [
+        "ich schreibe Ihnen, weil ich mit meiner Bestellung nicht zufrieden bin.",
+        "leider ist das Gerät beschädigt.",
+        "ich möchte Sie deshalb bitten, … auszutauschen oder … zurückzuerstatten.",
+        "ich erwarte Ihre Antwort bis spätestens …",
+        "vielen Dank im Voraus für Ihre Mühe."
+      ]
+    },
+    {
+      "id": "beschwerde_vermieter",
+      "category": "complaint",
+      "register": "formell",
+      "title": "Beschwerde an den Vermieter (Heizung defekt)",
+      "situation": "Seit zwei Wochen funktioniert die Heizung in Ihrer Wohnung nicht. Es ist kalt und Ihr Vermieter reagiert nicht auf Anrufe. Schreiben Sie ihm einen Brief.\n\nLeitpunkte:\n- das Problem und seit wann es besteht\n- warum die Situation für Sie schwierig ist\n- eine schnelle Reparatur fordern\n- einen konkreten Termin vorschlagen",
+      "letter": "Sehr geehrter Herr Schmidt,\n\nich wende mich an Sie, weil es in meiner Wohnung ein ernstes Problem gibt. Seit zwei Wochen funktioniert die Heizung nicht mehr, und in den Zimmern ist es sehr kalt.\n\nIch habe schon mehrmals versucht, Sie telefonisch zu erreichen, leider ohne Erfolg. Die Situation ist für mich sehr unangenehm, denn ich habe ein kleines Kind und wir werden langsam krank.\n\nIch bitte Sie deshalb, die Heizung so schnell wie möglich reparieren zu lassen. Könnten Sie einen Handwerker schicken? Mir würde zum Beispiel der kommende Freitag zwischen 9 und 12 Uhr gut passen.\n\nBitte teilen Sie mir kurz mit, ob der Termin für Sie in Ordnung ist. Vielen Dank für Ihr Verständnis.\n\nMit freundlichen Grüßen\nOlga Iwanowa",
+      "highlights": [
+        "ich wende mich an Sie, weil …",
+        "seit zwei Wochen funktioniert … nicht mehr.",
+        "ich habe schon mehrmals versucht, Sie telefonisch zu erreichen.",
+        "ich bitte Sie deshalb, … reparieren zu lassen.",
+        "bitte teilen Sie mir kurz mit, ob …"
+      ]
+    },
+    {
+      "id": "anfrage_sprachkurs",
+      "category": "request",
+      "register": "formell",
+      "title": "Anfrage: Informationen zu einem Sprachkurs",
+      "situation": "Sie haben im Internet eine Anzeige für einen Deutschkurs gefunden und möchten sich anmelden. Vorher brauchen Sie mehr Informationen. Schreiben Sie an die Sprachschule.\n\nLeitpunkte:\n- warum Sie den Kurs machen möchten\n- nach Kurszeiten und Dauer fragen\n- nach den Kosten und Ermäßigungen fragen\n- um einen Beratungstermin bitten",
+      "letter": "Sehr geehrte Damen und Herren,\n\nich habe Ihre Anzeige im Internet gelesen und interessiere mich sehr für Ihren Deutschkurs auf dem Niveau B1. Ich lerne Deutsch, weil ich in Deutschland studieren möchte, und suche einen Kurs, der zu meinem Alltag passt.\n\nBevor ich mich anmelde, hätte ich einige Fragen. Zuerst würde ich gern wissen, an welchen Tagen und zu welchen Zeiten der Unterricht stattfindet und wie lange der Kurs dauert. Außerdem interessiert mich, wie viel der Kurs kostet und ob es eine Ermäßigung für Studenten gibt.\n\nWäre es möglich, einen Termin für ein persönliches Beratungsgespräch zu bekommen? Ich bin nachmittags meistens frei.\n\nFür weitere Informationen wäre ich Ihnen sehr dankbar. Vielen Dank im Voraus.\n\nMit freundlichen Grüßen\nAli Yılmaz",
+      "highlights": [
+        "ich habe Ihre Anzeige im Internet gelesen und interessiere mich sehr für …",
+        "bevor ich mich anmelde, hätte ich einige Fragen.",
+        "zuerst würde ich gern wissen, …",
+        "außerdem interessiert mich, wie viel … kostet und ob …",
+        "wäre es möglich, einen Termin … zu bekommen?"
+      ]
+    },
+    {
+      "id": "anfrage_ferienwohnung",
+      "category": "request",
+      "register": "formell",
+      "title": "Anfrage / Reservierung: Ferienwohnung",
+      "situation": "Sie möchten im Sommer Urlaub machen und haben online eine Ferienwohnung gefunden. Schreiben Sie an die Vermietung, um zu reservieren und Fragen zu stellen.\n\nLeitpunkte:\n- Zeitraum und Personenzahl nennen\n- nach Preis und Ausstattung fragen\n- fragen, ob Haustiere erlaubt sind\n- um eine baldige Antwort bitten",
+      "letter": "Sehr geehrte Damen und Herren,\n\nauf Ihrer Internetseite habe ich Ihre Ferienwohnung in Konstanz gefunden, die uns sehr gut gefällt. Wir möchten sie gern vom 5. bis zum 12. Juli mieten. Wir sind zwei Erwachsene und ein Kind.\n\nBevor wir buchen, hätte ich noch ein paar Fragen. Könnten Sie mir bitte mitteilen, was die Wohnung pro Nacht kostet und ob die Nebenkosten schon im Preis enthalten sind? Außerdem würde ich gern wissen, ob es in der Wohnung WLAN und eine Waschmaschine gibt.\n\nEine wichtige Frage habe ich noch: Wir haben einen kleinen Hund. Ist es erlaubt, ihn mitzubringen?\n\nÜber eine baldige Antwort würde ich mich sehr freuen, da wir bald buchen möchten.\n\nMit freundlichen Grüßen\nAnna Kowalska",
+      "highlights": [
+        "auf Ihrer Internetseite habe ich … gefunden, die uns sehr gut gefällt.",
+        "könnten Sie mir bitte mitteilen, ob / was …?",
+        "ist … schon im Preis enthalten?",
+        "eine wichtige Frage habe ich noch: …",
+        "über eine baldige Antwort würde ich mich sehr freuen."
+      ]
+    },
+    {
+      "id": "kurs_abmelden",
+      "category": "cancellation",
+      "register": "formell",
+      "title": "Abmeldung von einem Kurs + Rückerstattung",
+      "situation": "Sie haben einen Kurs gebucht und bezahlt, können aber wegen eines neuen Jobs nicht teilnehmen. Schreiben Sie an die Sprachschule.\n\nLeitpunkte:\n- welchen Kurs Sie gebucht haben\n- warum Sie sich abmelden müssen\n- nach einer Rückerstattung fragen\n- um eine schriftliche Bestätigung bitten",
+      "letter": "Sehr geehrte Frau Müller,\n\nvor zwei Wochen habe ich mich für den Abendkurs „Deutsch B1“ angemeldet und die Kursgebühr bereits bezahlt. Leider muss ich mich jetzt wieder abmelden.\n\nDer Grund ist, dass ich vor Kurzem eine neue Stelle bekommen habe. Ich muss auch abends arbeiten und habe deshalb keine Zeit mehr für den Unterricht. Das tut mir wirklich leid, denn ich hatte mich sehr auf den Kurs gefreut.\n\nMeine Frage ist, ob ich die bezahlte Gebühr zurückbekommen kann. Falls das nicht möglich ist, wäre ich auch mit einem Gutschein für einen späteren Kurs einverstanden.\n\nKönnten Sie mir außerdem bitte eine schriftliche Bestätigung der Abmeldung schicken? Vielen Dank für Ihr Verständnis.\n\nMit freundlichen Grüßen\nSofia Rossi",
+      "highlights": [
+        "leider muss ich mich jetzt wieder abmelden.",
+        "der Grund ist, dass …",
+        "ich habe deshalb keine Zeit mehr für …",
+        "falls das nicht möglich ist, wäre ich auch mit … einverstanden.",
+        "könnten Sie mir bitte eine schriftliche Bestätigung schicken?"
+      ]
+    },
+    {
+      "id": "termin_verschieben",
+      "category": "appointment",
+      "register": "formell",
+      "title": "Termin absagen und verschieben (Arzt/Amt)",
+      "situation": "Sie haben einen Termin, können aber nicht kommen. Schreiben Sie eine E-Mail, sagen Sie ab und bitten Sie um einen neuen Termin.\n\nLeitpunkte:\n- sich für die Absage entschuldigen\n- den Grund erklären\n- um einen neuen Termin bitten\n- Ihre Erreichbarkeit angeben",
+      "letter": "Sehr geehrte Frau Dr. Weber,\n\nleider muss ich Ihnen mitteilen, dass ich meinen Termin am Donnerstag, den 10. April, um 10 Uhr nicht wahrnehmen kann. Ich möchte mich für die kurzfristige Absage entschuldigen.\n\nDer Grund ist, dass ich an diesem Tag beruflich verreisen muss und erst am Wochenende zurückkomme. Es tut mir sehr leid, dass ich den Termin so spät absage.\n\nKönnten Sie mir bitte einen neuen Termin in der nächsten Woche geben? Am besten würde mir ein Vormittag passen, aber ich bin natürlich flexibel.\n\nSie können mich jederzeit unter meiner Handynummer (0176 1234567) oder per E-Mail erreichen. Vielen Dank für Ihr Verständnis.\n\nMit freundlichen Grüßen\nPawel Nowak",
+      "highlights": [
+        "leider muss ich Ihnen mitteilen, dass ich … nicht wahrnehmen kann.",
+        "ich möchte mich für die kurzfristige Absage entschuldigen.",
+        "könnten Sie mir bitte einen neuen Termin … geben?",
+        "ich bin natürlich flexibel.",
+        "Sie können mich jederzeit unter … erreichen."
+      ]
+    },
+    {
+      "id": "bewerbung_nebenjob",
+      "category": "application",
+      "register": "formell",
+      "title": "Bewerbung / Anfrage auf eine Stellenanzeige (Nebenjob)",
+      "situation": "Sie haben eine Anzeige für einen Nebenjob (Aushilfe im Café) gelesen. Schreiben Sie eine kurze Bewerbung.\n\nLeitpunkte:\n- Bezug auf die Anzeige\n- warum Sie sich bewerben / Ihre Erfahrung\n- Ihre Verfügbarkeit\n- um ein Gespräch bitten",
+      "letter": "Sehr geehrte Damen und Herren,\n\nmit großem Interesse habe ich Ihre Anzeige gelesen, in der Sie eine Aushilfe für Ihr Café suchen. Hiermit möchte ich mich um diese Stelle bewerben.\n\nIch bin 24 Jahre alt und studiere an der Universität. Neben dem Studium möchte ich gern arbeiten, um praktische Erfahrung zu sammeln. In meiner Heimat habe ich schon zwei Jahre in einem Restaurant gearbeitet, deshalb habe ich Erfahrung im Umgang mit Gästen.\n\nArbeiten könnte ich vor allem am Wochenende und an drei Abenden pro Woche. Meine Deutschkenntnisse sind auf dem Niveau B1, und ich lerne schnell dazu.\n\nÜber die Einladung zu einem persönlichen Gespräch würde ich mich sehr freuen. Vielen Dank für Ihre Zeit.\n\nMit freundlichen Grüßen\nDiego Fernández",
+      "highlights": [
+        "mit großem Interesse habe ich Ihre Anzeige gelesen.",
+        "hiermit möchte ich mich um diese Stelle bewerben.",
+        "ich möchte gern arbeiten, um praktische Erfahrung zu sammeln.",
+        "arbeiten könnte ich vor allem am Wochenende.",
+        "über die Einladung zu einem Gespräch würde ich mich sehr freuen."
+      ]
+    },
+    {
+      "id": "einladung_party",
+      "category": "invitation",
+      "register": "informell",
+      "title": "Einladung zur Party (an eine Freundin)",
+      "situation": "Sie ziehen bald in eine neue Wohnung um und möchten eine Einweihungsparty feiern. Laden Sie Ihre Freundin ein.\n\nLeitpunkte:\n- Grund und Anlass der Party\n- Datum, Uhrzeit und Ort\n- was es zu essen/trinken gibt und ob sie etwas mitbringen soll\n- um eine Antwort bitten",
+      "letter": "Liebe Anna,\n\nwie geht es dir? Ich habe tolle Neuigkeiten: Ich bin endlich in meine neue Wohnung umgezogen! Deshalb möchte ich eine kleine Einweihungsparty feiern und dich herzlich einladen.\n\nDie Party findet am Samstag, dem 17. Mai, ab 18 Uhr statt. Meine neue Adresse ist Gartenstraße 12. Es ist ganz einfach zu finden, direkt neben der U-Bahn-Station.\n\nFür Essen und Getränke ist gesorgt – ich koche etwas und es gibt genug zu trinken. Wenn du möchtest, kannst du gern deinen leckeren Salat mitbringen. Und bring ruhig deinen Freund mit!\n\nSag mir bitte bis Mittwoch Bescheid, ob du kommen kannst, damit ich genug einkaufen kann. Ich freue mich riesig, dich zu sehen!\n\nLiebe Grüße\nKatja",
+      "highlights": [
+        "ich habe tolle Neuigkeiten: …",
+        "deshalb möchte ich … dich herzlich einladen.",
+        "die Party findet am … ab … Uhr statt.",
+        "für Essen und Getränke ist gesorgt.",
+        "sag mir bitte bis … Bescheid, ob du kommen kannst."
+      ]
+    },
+    {
+      "id": "antwort_besuch",
+      "category": "reply",
+      "register": "informell",
+      "title": "Antwort an einen Freund: Besuch planen",
+      "situation": "Ihr Freund aus einer anderen Stadt möchte Sie besuchen. Antworten Sie auf seine E-Mail.\n\nLeitpunkte:\n- sich über den Besuch freuen\n- einen passenden Termin vorschlagen\n- Vorschläge machen, was ihr zusammen machen könnt\n- praktische Infos (Anreise, Übernachtung)",
+      "letter": "Hallo Tom,\n\nich habe mich total über deine E-Mail gefreut! Natürlich kannst du mich besuchen kommen – darauf freue ich mich schon sehr.\n\nAm besten würde mir das letzte Wochenende im Juni passen. Da habe ich frei und wir hätten viel Zeit füreinander. Wenn das bei dir nicht klappt, finden wir bestimmt einen anderen Termin.\n\nIch habe schon ein paar Ideen: Wir könnten am Samstag durch die Altstadt bummeln und abends in mein Lieblingsrestaurant gehen. Am Sonntag machen wir vielleicht eine Radtour am See, wenn das Wetter schön ist.\n\nÜbernachten kannst du natürlich bei mir, ich habe ein Gästezimmer. Vom Bahnhof hole ich dich mit dem Auto ab, sag mir einfach, wann dein Zug ankommt.\n\nIch kann es kaum erwarten! Melde dich bald.\n\nViele Grüße\nNina",
+      "highlights": [
+        "ich habe mich total über deine E-Mail gefreut!",
+        "am besten würde mir … passen.",
+        "wenn das bei dir nicht klappt, finden wir einen anderen Termin.",
+        "wir könnten … bummeln und … gehen.",
+        "ich kann es kaum erwarten!"
+      ]
+    },
+    {
+      "id": "bitte_hilfe",
+      "category": "help",
+      "register": "informell",
+      "title": "Bitte um Hilfe / Rat (an einen Freund)",
+      "situation": "Sie ziehen um und brauchen Hilfe. Schreiben Sie an einen Freund und bitten Sie ihn um Unterstützung.\n\nLeitpunkte:\n- Ihre Situation erklären\n- konkret um Hilfe bitten\n- einen Termin vorschlagen\n- etwas als Dank anbieten",
+      "letter": "Lieber Max,\n\nich hoffe, dir geht es gut. Ich schreibe dir, weil ich gerade ziemlich im Stress bin und deine Hilfe brauchen könnte.\n\nWie du weißt, ziehe ich nächste Woche in meine neue Wohnung um. Leider ist es viel mehr Arbeit, als ich gedacht habe, und allein schaffe ich das nicht. Könntest du mir vielleicht am Samstag beim Tragen der Möbel helfen? Du hast doch ein Auto, oder? Das wäre eine riesige Hilfe.\n\nIch dachte, wir könnten so gegen 10 Uhr anfangen. Bis zum Nachmittag sind wir bestimmt fertig.\n\nAls Dankeschön lade ich dich natürlich zum Essen ein – ich bestelle Pizza und wir trinken ein Bier zusammen.\n\nSag mir bitte Bescheid, ob das für dich okay ist. Danke dir schon mal im Voraus!\n\nLiebe Grüße\nSergej",
+      "highlights": [
+        "ich schreibe dir, weil ich … deine Hilfe brauchen könnte.",
+        "könntest du mir vielleicht … helfen?",
+        "das wäre eine riesige Hilfe.",
+        "als Dankeschön lade ich dich zum Essen ein.",
+        "danke dir schon mal im Voraus!"
+      ]
+    },
+    {
+      "id": "entschuldigung_freund",
+      "category": "apology",
+      "register": "informell",
+      "title": "Entschuldigung an einen Freund (Absage)",
+      "situation": "Sie waren zum Geburtstag eingeladen, konnten aber nicht kommen. Entschuldigen Sie sich bei Ihrem Freund.\n\nLeitpunkte:\n- sich entschuldigen und den Grund erklären\n- fragen, wie die Feier war\n- ein Treffen vorschlagen\n- etwas Nettes anbieten (z. B. einladen)",
+      "letter": "Lieber Marco,\n\nes tut mir wirklich sehr leid, dass ich letzte Woche nicht zu deiner Geburtstagsfeier kommen konnte. Ich hoffe, du bist mir nicht böse.\n\nDer Grund war, dass ich plötzlich krank geworden bin. Ich hatte hohes Fieber und musste im Bett bleiben. Leider konnte ich dir nicht rechtzeitig Bescheid sagen, und das ärgert mich sehr.\n\nErzähl mir doch mal, wie die Feier war! Habt ihr viel Spaß gehabt? Wer war alles da?\n\nZum Glück geht es mir jetzt wieder gut. Ich würde dich gern bald wiedersehen. Hast du am nächsten Wochenende Zeit? Ich möchte dich zum Essen einladen und dir dein Geschenk endlich persönlich geben.\n\nMelde dich, wann es dir passt. Noch mal alles Gute nachträglich!\n\nLiebe Grüße\nElena",
+      "highlights": [
+        "es tut mir wirklich sehr leid, dass ich … nicht kommen konnte.",
+        "der Grund war, dass ich krank geworden bin.",
+        "erzähl mir doch mal, wie … war!",
+        "hast du am nächsten Wochenende Zeit?",
+        "alles Gute nachträglich!"
+      ]
+    },
+    {
+      "id": "dank_besuch",
+      "category": "thanks",
+      "register": "informell",
+      "title": "Danksagung (nach einem Besuch)",
+      "situation": "Sie haben eine Woche bei Freunden / einer Gastfamilie gewohnt. Bedanken Sie sich nach der Rückkehr.\n\nLeitpunkte:\n- sich für die Gastfreundschaft bedanken\n- ein schönes Erlebnis erwähnen\n- sich revanchieren / zum Gegenbesuch einladen\n- guten Kontakt halten",
+      "letter": "Liebe Familie Berger,\n\njetzt bin ich wieder gut zu Hause angekommen und möchte mich ganz herzlich bei euch bedanken. Die Woche bei euch war einfach wunderbar!\n\nVielen Dank für eure Gastfreundschaft und dafür, dass ihr euch so viel Zeit für mich genommen habt. Besonders der Ausflug in die Berge hat mir großen Spaß gemacht – die Aussicht war fantastisch und ich werde diesen Tag nie vergessen.\n\nIhr müsst mich unbedingt auch mal besuchen kommen! Ich würde mich riesig freuen, euch meine Stadt zu zeigen. Bei mir ist immer ein Platz für euch frei.\n\nLasst uns in Kontakt bleiben und öfter schreiben. Grüßt bitte auch die Kinder von mir.\n\nBis bald und noch einmal danke für alles!\n\nLiebe Grüße\nAmir",
+      "highlights": [
+        "ich möchte mich ganz herzlich bei euch bedanken.",
+        "vielen Dank für eure Gastfreundschaft.",
+        "besonders … hat mir großen Spaß gemacht.",
+        "ihr müsst mich unbedingt auch mal besuchen kommen!",
+        "lasst uns in Kontakt bleiben."
+      ]
+    }
+  ]
+}
