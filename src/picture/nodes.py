@@ -13,6 +13,7 @@ from ..common.llm import (
     PICTURE_MODEL,
     client,
     extract_json,
+    response_text,
 )
 from .prompts import DESCRIBE_SYSTEM, DESCRIBE_USER_TEMPLATE
 from .state import PictureState
@@ -97,7 +98,7 @@ def check_description(state: PictureState) -> dict:
             }
         ],
     )
-    data = json.loads(extract_json(response.content[0].text))
+    data = json.loads(extract_json(response_text(response)))
 
     errors = []
     for err in data.get("errors", []) or []:

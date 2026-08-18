@@ -45,6 +45,18 @@ _bridge_streamlit_secrets()
 client = Anthropic()
 
 
+def response_text(response) -> str:
+    """The text of a model response, skipping non-text blocks.
+
+    The grading models reason before answering, so response.content can lead
+    with a ThinkingBlock (no .text); the JSON we want is in the text block(s).
+    Concatenate every text block and ignore the rest."""
+    return "".join(
+        block.text for block in response.content
+        if getattr(block, "type", None) == "text"
+    ).strip()
+
+
 def extract_json(raw: str) -> str:
     """Strip an optional markdown fence from a model response."""
     raw = raw.strip()

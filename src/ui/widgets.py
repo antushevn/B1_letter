@@ -18,17 +18,32 @@ _SEVERITY_ICON = {"critical": "🔴", "moderate": "🟡", "minor": "🟢"}
 
 def disable_spellcheck():
     """Turn off the browser's native spell-/grammar-check on textareas so the
-    learner writes unaided (feedback is given only after submission)."""
+    learner writes unaided (feedback is given only after submission).
+
+    Streamlit re-mounts the textarea on reruns (e.g. after the word counter
+    updates), which resets the flag and lets the red underlines creep back. So
+    we don't just set it once: a MutationObserver re-applies it whenever the DOM
+    changes, then disconnects after a few seconds so no observer lingers."""
     components.html(
         """
         <script>
-        const doc = window.parent.document;
-        doc.querySelectorAll('textarea').forEach((t) => {
-            t.setAttribute('spellcheck', 'false');
-            t.setAttribute('autocorrect', 'off');
-            t.setAttribute('autocapitalize', 'off');
-            t.setAttribute('autocomplete', 'off');
-        });
+        (function () {
+            const doc = window.parent.document;
+            function apply() {
+                doc.querySelectorAll('textarea').forEach((t) => {
+                    if (t.getAttribute('spellcheck') === 'false') return;
+                    t.setAttribute('spellcheck', 'false');
+                    t.setAttribute('autocorrect', 'off');
+                    t.setAttribute('autocapitalize', 'off');
+                    t.setAttribute('autocomplete', 'off');
+                    t.spellcheck = false;
+                });
+            }
+            apply();
+            const obs = new MutationObserver(apply);
+            obs.observe(doc.body, {childList: true, subtree: true});
+            setTimeout(() => obs.disconnect(), 10000);
+        })();
         </script>
         """,
         height=0,

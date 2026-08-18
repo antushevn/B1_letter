@@ -13,6 +13,7 @@ from ..common.llm import (
     TOPIC_MODEL,
     client,
     extract_json,
+    response_text,
 )
 from .prompts import CHECK_SYSTEM, CHECK_USER_TEMPLATE, TOPIC_SYSTEM, TOPIC_USER
 from .state import PracticeState
@@ -71,7 +72,7 @@ def check_letter(state: PracticeState) -> dict:
             }
         ],
     )
-    data = json.loads(extract_json(response.content[0].text))
+    data = json.loads(extract_json(response_text(response)))
 
     errors = []
     for err in data.get("errors", []) or []:
