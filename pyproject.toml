@@ -1,6 +1,6 @@
 [project]
 name = "b1-letter"
-version = "0.4.6"
+version = "0.4.7"
 requires-python = ">=3.12"
 dependencies = [
     "langgraph>=0.2",

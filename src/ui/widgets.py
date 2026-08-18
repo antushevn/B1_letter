@@ -21,28 +21,30 @@ def disable_spellcheck():
     learner writes unaided (feedback is given only after submission).
 
     Streamlit re-mounts the textarea on reruns (e.g. after the word counter
-    updates), which resets the flag and lets the red underlines creep back. So
-    we don't just set it once: a MutationObserver re-applies it whenever the DOM
-    changes, then disconnects after a few seconds so no observer lingers."""
+    updates), which resets the flag and lets the red underlines creep back. This
+    re-applies the flag on a short, *bounded* retry chain that then stops — like
+    live_word_count. It deliberately does NOT observe the whole document:
+    a MutationObserver on the parent body fires on Streamlit's constant DOM
+    churn and, stacking one per rerun, pins the browser's main thread (frozen
+    cursor, dead copy, tab hangs). disable_spellcheck is re-called on every
+    rerun anyway, so each rerun's re-mount is covered by the next chain."""
     components.html(
         """
         <script>
         (function () {
             const doc = window.parent.document;
+            let tries = 0;
             function apply() {
                 doc.querySelectorAll('textarea').forEach((t) => {
-                    if (t.getAttribute('spellcheck') === 'false') return;
                     t.setAttribute('spellcheck', 'false');
                     t.setAttribute('autocorrect', 'off');
                     t.setAttribute('autocapitalize', 'off');
                     t.setAttribute('autocomplete', 'off');
                     t.spellcheck = false;
                 });
+                if (tries++ < 20) setTimeout(apply, 200);
             }
             apply();
-            const obs = new MutationObserver(apply);
-            obs.observe(doc.body, {childList: true, subtree: true});
-            setTimeout(() => obs.disconnect(), 10000);
         })();
         </script>
         """,
