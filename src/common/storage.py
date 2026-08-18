@@ -109,6 +109,26 @@ ERROR_CATEGORIES = (
     "other",            # anything not covered above
 )
 
+# Error severity — the model tags every letter error by how much it hinders
+# comprehension (telc's "Primat der Verständlichkeit"). The weights let a serious
+# mistake outweigh cosmetic slips in the weak-areas chart and grammar
+# recommendations, so training priority reflects gravity, not a flat error count.
+# Legacy errors and grammar wrong_categories (no severity) count as "moderate".
+SEVERITIES = ("minor", "moderate", "critical")
+SEVERITY_WEIGHTS = {"minor": 0.25, "moderate": 1.0, "critical": 3.0}
+DEFAULT_SEVERITY = "moderate"
+
+
+def severity_weight(severity: str | None) -> float:
+    """Weight for one error's severity; unknown/missing counts as moderate."""
+    return SEVERITY_WEIGHTS.get(severity or DEFAULT_SEVERITY, 1.0)
+
+
+def severity_sum(errors: list[dict]) -> float:
+    """Total severity weight of a letter's errors (shown in the UI)."""
+    return round(sum(severity_weight(e.get("severity")) for e in errors or []), 2)
+
+
 # How many recent attempts must all be "Pass" for the exam-readiness badge.
 READINESS_WINDOW = 5
 
@@ -180,22 +200,26 @@ def compute_readiness(attempts: list[dict], window: int = READINESS_WINDOW) -> d
     }
 
 
-def error_category_counts(attempts: list[dict]) -> dict[str, int]:
-    """Total count per error category across the given attempts, most frequent
-    first. Letter and picture attempts both carry `errors`; grammar attempts
-    instead carry `wrong_categories` (categories of exercises answered wrong)."""
-    counts: dict[str, int] = {}
+def error_category_counts(attempts: list[dict]) -> dict[str, float]:
+    """Severity-weighted total per error category across the given attempts, most
+    urgent first. Letter/picture attempts carry `errors` (each weighted by its
+    severity); grammar attempts carry `wrong_categories` (one wrong exercise each,
+    weighted as moderate). Values are floats — a single critical error outweighs
+    several cosmetic slips, so the chart and grammar recommendations track gravity
+    rather than a flat count."""
+    counts: dict[str, float] = {}
 
-    def bump(cat: str) -> None:
+    def bump(cat: str, weight: float = 1.0) -> None:
         if cat not in ERROR_CATEGORIES:
             cat = "other"
-        counts[cat] = counts.get(cat, 0) + 1
+        counts[cat] = counts.get(cat, 0.0) + weight
 
     for a in attempts:
         for err in a.get("errors", []) or []:
-            bump(err.get("category") or "other")
+            bump(err.get("category") or "other", severity_weight(err.get("severity")))
         for cat in a.get("wrong_categories", []) or []:
             bump(cat)
+    counts = {k: round(v, 2) for k, v in counts.items()}
     return dict(sorted(counts.items(), key=lambda kv: kv[1], reverse=True))
 
 

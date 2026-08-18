@@ -12,6 +12,9 @@ from .i18n import GRADE_COLOUR, SCORE_COLOUR
 _WC_IN_RANGE = "#21c354"
 _WC_OUT_RANGE = "#ff8700"
 
+# Severity → traffic-light icon for the error list (order = worst first).
+_SEVERITY_ICON = {"critical": "🔴", "moderate": "🟡", "minor": "🟢"}
+
 
 def disable_spellcheck():
     """Turn off the browser's native spell-/grammar-check on textareas so the
@@ -132,9 +135,33 @@ def render_assessment(T, result, criterion_keys, criterion_labels, missing_label
     errors = result.get("errors") or []
     if errors:
         st.subheader(f"{T['errors']} ({len(errors)})")
-        for i, err in enumerate(errors, 1):
-            with st.expander(f"{i}. „{err.get('original', '')}\""):
+        _severity_summary(T, errors)
+        # Worst errors first so the learner reads the important ones on top.
+        order = {"critical": 0, "moderate": 1, "minor": 2}
+        ranked = sorted(
+            enumerate(errors, 1),
+            key=lambda ie: order.get(ie[1].get("severity", "moderate"), 1),
+        )
+        for i, err in ranked:
+            sev = err.get("severity", "moderate")
+            icon = _SEVERITY_ICON.get(sev, "🟡")
+            label = T["severity_labels"].get(sev, sev)
+            with st.expander(f"{icon} {i}. „{err.get('original', '')}\" — {label}"):
                 st.markdown(f"**{T['correction']}:** {err.get('correction', '')}")
                 st.markdown(f"**{T['explanation']}:** {err.get('explanation', '')}")
     else:
         st.success(T["no_errors"])
+
+
+def _severity_summary(T, errors):
+    """Extra-info line: total severity weight + a per-level breakdown. The weight
+    mirrors telc's 'Primat der Verständlichkeit' — cosmetic slips barely add up,
+    a critical error weighs heavily."""
+    total = storage.severity_sum(errors)
+    parts = []
+    for sev in ("critical", "moderate", "minor"):
+        n = sum(1 for e in errors if e.get("severity", "moderate") == sev)
+        if n:
+            parts.append(f"{_SEVERITY_ICON[sev]} {n}")
+    breakdown = "  ·  ".join(parts)
+    st.caption(f"{T['severity_sum']}: **{total}**  ({breakdown})")

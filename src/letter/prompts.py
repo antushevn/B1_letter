@@ -71,11 +71,18 @@ values (Pass/Borderline/Fail, A/B/C/D), and the German phrases quoted from the s
    Note: mixing du and Sie in one letter = maximum C on this criterion.
 
 3. SPRACHLICHE / FORMALE RICHTIGKEIT — Linguistic accuracy (A–D)
-   A: Errors rare and never impede understanding; uses subordinate clauses (weil, dass, obwohl,
-      damit, wenn); vocabulary above A2; Konjunktiv II for polite requests (Könnten Sie…,
-      Ich würde gerne…); correct Dativ/Akkusativ; correct verb-second word order.
-   B: Some errors but meaning always clear; at least one subordinate clause.
-   C: Frequent errors that sometimes impede understanding.
+   Grade this by the telc principle "Primat der Verständlichkeit" (priority of comprehensibility):
+   an error weighs according to how much it hinders quick understanding of the text, NOT merely
+   because it is technically wrong. Purely orthographic slips at B1 — a missing umlaut written as
+   a plain vowel (o for ö, ue for ü), a noun spelled lowercase, ß/ss confusion, a missing comma,
+   small typos — barely affect this grade as long as the message stays clear. Weigh the number,
+   type, and gravity of errors together, not a flat error count.
+   A: No or only isolated errors; understanding never impeded. Rich, correct structures
+      (subordinate clauses with weil/dass/obwohl/damit/wenn, Konjunktiv II for polite requests —
+      Könnten Sie…, Ich würde gerne…, correct Dativ/Akkusativ, verb-second word order) support
+      this grade. NOT possible if the text uses predominantly phonetic spelling throughout.
+   B: Errors are present but never impede understanding and are not numerous; meaning always clear.
+   C: Errors at central points that considerably impede understanding.
    D: Errors throughout that make the text largely incomprehensible. → entire letter = 0 points.
 
 ─── SCORING ──────────────────────────────────────────────────────────────────────
@@ -100,6 +107,19 @@ Flag these specifically if present. Each maps to a fixed category key (use it in
 - Missing or inappropriate greeting / sign-off → greeting
 - Anything else → other
 
+─── ERROR SEVERITY ────────────────────────────────────────────────────────────────
+
+Tag every error with a "severity" that follows the same Primat der Verständlichkeit. Judge by
+the error's impact on comprehension, NOT by its category — the same category can be minor or
+critical depending on the sentence:
+- "minor"    — cosmetic / orthographic; never impedes understanding. A missing umlaut written as
+               a plain vowel (o→ö, ue→ü), a noun spelled lowercase, ß/ss, a missing or extra
+               comma, a small typo. At B1 these barely affect the exam score.
+- "moderate" — a real grammatical or lexical error (wrong case, article, preposition, verb form,
+               or word order) whose meaning is still recoverable from context.
+- "critical" — an error that impedes understanding, sits at a central point of the message, or
+               garbles the sentence; a register error in a formal letter also counts here.
+
 ─── OUTPUT FORMAT ────────────────────────────────────────────────────────────────
 
 Return a single raw JSON object — no markdown fences, no extra text:
@@ -119,7 +139,8 @@ Return a single raw JSON object — no markdown fences, no extra text:
       "original": "<exact incorrect phrase copied from the letter>",
       "correction": "<corrected version>",
       "explanation": "<one sentence in {feedback_language} explaining the rule>",
-      "category": "<one of: article | case | word_order | separable_verb | preposition | verb_conjugation | register | spelling | greeting | other>"
+      "category": "<one of: article | case | word_order | separable_verb | preposition | verb_conjugation | register | spelling | greeting | other>",
+      "severity": "<one of: minor | moderate | critical>"
     },
     ...
   ]

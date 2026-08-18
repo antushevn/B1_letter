@@ -78,11 +78,15 @@ def check_letter(state: PracticeState) -> dict:
         category = err.get("category", "other")
         if category not in storage.ERROR_CATEGORIES:
             category = "other"
+        severity = err.get("severity", storage.DEFAULT_SEVERITY)
+        if severity not in storage.SEVERITIES:
+            severity = storage.DEFAULT_SEVERITY
         errors.append({
             "original": err.get("original", ""),
             "correction": err.get("correction", ""),
             "explanation": err.get("explanation", ""),
             "category": category,
+            "severity": severity,
         })
 
     result = {
